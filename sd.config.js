@@ -1,7 +1,7 @@
 import StyleDictionary from 'style-dictionary';
 import { promises as fs } from 'fs';
 
-const themes = ['ctdg', 'plumb', 'hippo', 'talki-oss'];
+const themes = ['plumb', 'hippo', 'talki-oss'];
 
 // ── Core tokens → dist/css/core.css + dist/js/tokens.js ──────────────────────
 
