@@ -1,0 +1,36 @@
+{
+  "$description": "Talki OSS — open source product. Fill in brand colors when design is ready.",
+  "color": {
+    "primary":        { "$type": "color", "$value": "#F59E0B", "$description": "TODO: confirm brand primary" },
+    "primary-hover":  { "$type": "color", "$value": "#D97706" },
+    "highlight":      { "$type": "color", "$value": "#10B981" },
+
+    "surface-dark":   { "$type": "color", "$value": "#1C1A16" },
+    "surface-med":    { "$type": "color", "$value": "#FFFBEB" },
+    "surface":        { "$type": "color", "$value": "#FEFCE8" },
+    "surface-light":  { "$type": "color", "$value": "#FFFFFF" },
+
+    "text":           { "$type": "color", "$value": "#1C1A16" },
+    "text-light":     { "$type": "color", "$value": "#57534E" },
+    "text-muted":     { "$type": "color", "$value": "#78716C" },
+
+    "text-inverse":       { "$type": "color", "$value": "#FEFCE8" },
+    "text-inverse-light": { "$type": "color", "$value": "#D6D3D1" },
+    "text-inverse-muted": { "$type": "color", "$value": "#A8A29E" },
+
+    "border-light":   { "$type": "color", "$value": "#FEF3C7" },
+    "border":         { "$type": "color", "$value": "#FDE68A" },
+    "border-dark":    { "$type": "color", "$value": "#F59E0B" },
+
+    "overlay-light":  { "$type": "color", "$value": "rgba(0, 0, 0, 0.04)" },
+    "overlay-med":    { "$type": "color", "$value": "rgba(0, 0, 0, 0.08)" },
+    "overlay-dark":   { "$type": "color", "$value": "rgba(0, 0, 0, 0.16)" },
+    "scrim":          { "$type": "color", "$value": "rgba(0, 0, 0, 0.4)" }
+  },
+  "font": {
+    "family": {
+      "sans": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "mono": { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
+    }
+  }
+}

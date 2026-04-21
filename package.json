@@ -1,0 +1,22 @@
+{
+  "name": "@november/tokens",
+  "version": "0.1.0",
+  "description": "November design system — shared tokens for Plumb, Hippo, and Talki-OSS",
+  "type": "module",
+  "main": "dist/js/tokens.js",
+  "exports": {
+    ".": "./dist/js/tokens.js",
+    "./css": "./dist/css/core.css",
+    "./themes/*": "./dist/css/themes/*.css"
+  },
+  "scripts": {
+    "build": "node sd.config.js",
+    "watch": "node --watch sd.config.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "devDependencies": {
+    "style-dictionary": "^4.3.0"
+  }
+}

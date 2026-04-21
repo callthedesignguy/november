@@ -1,0 +1,36 @@
+{
+  "$description": "Plumb (formerly Talki) — voice/comms product. Fill in brand colors.",
+  "color": {
+    "primary":        { "$type": "color", "$value": "#5C6EFF", "$description": "TODO: confirm brand primary" },
+    "primary-hover":  { "$type": "color", "$value": "#4A5CE8" },
+    "highlight":      { "$type": "color", "$value": "#10B981" },
+
+    "surface-dark":   { "$type": "color", "$value": "#0F0F1A" },
+    "surface-med":    { "$type": "color", "$value": "#1E1E2E" },
+    "surface":        { "$type": "color", "$value": "#16161F" },
+    "surface-light":  { "$type": "color", "$value": "#1A1A28" },
+
+    "text":           { "$type": "color", "$value": "#F0F0FF" },
+    "text-light":     { "$type": "color", "$value": "#B0B4CC" },
+    "text-muted":     { "$type": "color", "$value": "#6E7299" },
+
+    "text-inverse":       { "$type": "color", "$value": "#0F0F1A" },
+    "text-inverse-light": { "$type": "color", "$value": "#2A2A3E" },
+    "text-inverse-muted": { "$type": "color", "$value": "#4A4A6A" },
+
+    "border-light":   { "$type": "color", "$value": "#2A2A3E" },
+    "border":         { "$type": "color", "$value": "#3A3A5C" },
+    "border-dark":    { "$type": "color", "$value": "#5A5A80" },
+
+    "overlay-light":  { "$type": "color", "$value": "rgba(255, 255, 255, 0.04)" },
+    "overlay-med":    { "$type": "color", "$value": "rgba(255, 255, 255, 0.08)" },
+    "overlay-dark":   { "$type": "color", "$value": "rgba(255, 255, 255, 0.16)" },
+    "scrim":          { "$type": "color", "$value": "rgba(0, 0, 0, 0.6)" }
+  },
+  "font": {
+    "family": {
+      "sans": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "mono": { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
+    }
+  }
+}

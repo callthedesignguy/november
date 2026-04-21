@@ -1,0 +1,36 @@
+{
+  "$description": "Hippo — fill in brand colors when design is ready.",
+  "color": {
+    "primary":        { "$type": "color", "$value": "#7C3AED", "$description": "TODO: confirm brand primary" },
+    "primary-hover":  { "$type": "color", "$value": "#6D28D9" },
+    "highlight":      { "$type": "color", "$value": "#10B981" },
+
+    "surface-dark":   { "$type": "color", "$value": "#1A1625" },
+    "surface-med":    { "$type": "color", "$value": "#F5F3FF" },
+    "surface":        { "$type": "color", "$value": "#FAFAFE" },
+    "surface-light":  { "$type": "color", "$value": "#FFFFFF" },
+
+    "text":           { "$type": "color", "$value": "#1A1625" },
+    "text-light":     { "$type": "color", "$value": "#4B4869" },
+    "text-muted":     { "$type": "color", "$value": "#7C789A" },
+
+    "text-inverse":       { "$type": "color", "$value": "#FAFAFE" },
+    "text-inverse-light": { "$type": "color", "$value": "#C4C0E0" },
+    "text-inverse-muted": { "$type": "color", "$value": "#9A96BC" },
+
+    "border-light":   { "$type": "color", "$value": "#EDE9FE" },
+    "border":         { "$type": "color", "$value": "#D4CFF5" },
+    "border-dark":    { "$type": "color", "$value": "#A89FD8" },
+
+    "overlay-light":  { "$type": "color", "$value": "rgba(0, 0, 0, 0.04)" },
+    "overlay-med":    { "$type": "color", "$value": "rgba(0, 0, 0, 0.08)" },
+    "overlay-dark":   { "$type": "color", "$value": "rgba(0, 0, 0, 0.16)" },
+    "scrim":          { "$type": "color", "$value": "rgba(0, 0, 0, 0.4)" }
+  },
+  "font": {
+    "family": {
+      "sans": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "mono": { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
+    }
+  }
+}

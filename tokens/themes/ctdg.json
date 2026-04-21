@@ -1,0 +1,35 @@
+{
+  "color": {
+    "primary":        { "$type": "color", "$value": "#F94306" },
+    "primary-hover":  { "$type": "color", "$value": "#E03D05" },
+    "highlight":      { "$type": "color", "$value": "#10B981" },
+
+    "surface-dark":   { "$type": "color", "$value": "#1D1F2A" },
+    "surface-med":    { "$type": "color", "$value": "#EBEBE9" },
+    "surface":        { "$type": "color", "$value": "#F7F6F4" },
+    "surface-light":  { "$type": "color", "$value": "#FAFAF8" },
+
+    "text":           { "$type": "color", "$value": "#1D1F2A" },
+    "text-light":     { "$type": "color", "$value": "#5C6078" },
+    "text-muted":     { "$type": "color", "$value": "#878BA4" },
+
+    "text-inverse":       { "$type": "color", "$value": "#FEFEFE" },
+    "text-inverse-light": { "$type": "color", "$value": "#C8CAD8" },
+    "text-inverse-muted": { "$type": "color", "$value": "#A8ABC0" },
+
+    "border-light":   { "$type": "color", "$value": "#E5E7EB" },
+    "border":         { "$type": "color", "$value": "#C2C5CF" },
+    "border-dark":    { "$type": "color", "$value": "#8E93A3" },
+
+    "overlay-light":  { "$type": "color", "$value": "rgba(0, 0, 0, 0.04)" },
+    "overlay-med":    { "$type": "color", "$value": "rgba(0, 0, 0, 0.08)" },
+    "overlay-dark":   { "$type": "color", "$value": "rgba(0, 0, 0, 0.16)" },
+    "scrim":          { "$type": "color", "$value": "rgba(0, 0, 0, 0.4)" }
+  },
+  "font": {
+    "family": {
+      "sans": { "$type": "fontFamily", "$value": ["Geist", "system-ui", "sans-serif"] },
+      "mono": { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
+    }
+  }
+}

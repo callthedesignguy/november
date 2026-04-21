@@ -1,0 +1,46 @@
+{
+  "shadow": {
+    "sm": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0", "offsetY": "1px", "blur": "2px", "spread": "0",
+        "color": "rgba(0, 0, 0, 0.05)"
+      }
+    },
+    "default": {
+      "$type": "shadow",
+      "$value": [
+        { "offsetX": "0", "offsetY": "1px", "blur": "3px", "spread": "0", "color": "rgba(0, 0, 0, 0.1)" },
+        { "offsetX": "0", "offsetY": "1px", "blur": "2px", "spread": "-1px", "color": "rgba(0, 0, 0, 0.1)" }
+      ]
+    },
+    "lg": {
+      "$type": "shadow",
+      "$value": [
+        { "offsetX": "0", "offsetY": "10px", "blur": "15px", "spread": "-3px", "color": "rgba(0, 0, 0, 0.1)" },
+        { "offsetX": "0", "offsetY": "4px",  "blur": "6px",  "spread": "-2px", "color": "rgba(0, 0, 0, 0.05)" }
+      ]
+    },
+    "xl": {
+      "$type": "shadow",
+      "$value": [
+        { "offsetX": "0", "offsetY": "20px", "blur": "25px", "spread": "-5px",  "color": "rgba(0, 0, 0, 0.1)" },
+        { "offsetX": "0", "offsetY": "8px",  "blur": "10px", "spread": "-6px",  "color": "rgba(0, 0, 0, 0.1)" }
+      ]
+    },
+    "popover": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0", "offsetY": "25px", "blur": "50px", "spread": "-12px",
+        "color": "rgba(0, 0, 0, 0.25)"
+      }
+    },
+    "focus-ring": {
+      "$type": "shadow",
+      "$value": [
+        { "offsetX": "0", "offsetY": "0", "blur": "0", "spread": "3px", "color": "rgba(0, 0, 0, 0.1)" },
+        { "offsetX": "0", "offsetY": "0", "blur": "0", "spread": "0",   "color": "transparent" }
+      ]
+    }
+  }
+}
