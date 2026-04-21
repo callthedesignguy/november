@@ -1,0 +1,28 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+[data-theme="ctdg"], .theme-ctdg {
+  --color-primary: #f94306;
+  --color-primary-hover: #e03d05;
+  --color-highlight: #10b981;
+  --color-surface-dark: #1d1f2a;
+  --color-surface-med: #ebebe9;
+  --color-surface: #f7f6f4;
+  --color-surface-light: #fafaf8;
+  --color-text: #1d1f2a;
+  --color-text-light: #5c6078;
+  --color-text-muted: #878ba4;
+  --color-text-inverse: #fefefe;
+  --color-text-inverse-light: #c8cad8;
+  --color-text-inverse-muted: #a8abc0;
+  --color-border-light: #e5e7eb;
+  --color-border: #c2c5cf;
+  --color-border-dark: #8e93a3;
+  --color-overlay-light: rgba(0, 0, 0, 0.04);
+  --color-overlay-med: rgba(0, 0, 0, 0.08);
+  --color-overlay-dark: rgba(0, 0, 0, 0.16);
+  --color-scrim: rgba(0, 0, 0, 0.4);
+  --font-family-sans: Geist, system-ui, sans-serif;
+  --font-family-mono: 'JetBrains Mono', monospace;
+}

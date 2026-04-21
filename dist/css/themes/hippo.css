@@ -1,0 +1,28 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+[data-theme="hippo"], .theme-hippo {
+  --color-primary: #7c3aed; /** TODO: confirm brand primary */
+  --color-primary-hover: #6d28d9;
+  --color-highlight: #10b981;
+  --color-surface-dark: #1a1625;
+  --color-surface-med: #f5f3ff;
+  --color-surface: #fafafe;
+  --color-surface-light: #ffffff;
+  --color-text: #1a1625;
+  --color-text-light: #4b4869;
+  --color-text-muted: #7c789a;
+  --color-text-inverse: #fafafe;
+  --color-text-inverse-light: #c4c0e0;
+  --color-text-inverse-muted: #9a96bc;
+  --color-border-light: #ede9fe;
+  --color-border: #d4cff5;
+  --color-border-dark: #a89fd8;
+  --color-overlay-light: rgba(0, 0, 0, 0.04);
+  --color-overlay-med: rgba(0, 0, 0, 0.08);
+  --color-overlay-dark: rgba(0, 0, 0, 0.16);
+  --color-scrim: rgba(0, 0, 0, 0.4);
+  --font-family-sans: Inter, system-ui, sans-serif;
+  --font-family-mono: 'JetBrains Mono', monospace;
+}

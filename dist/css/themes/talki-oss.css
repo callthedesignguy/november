@@ -1,0 +1,28 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+[data-theme="talki-oss"], .theme-talki-oss {
+  --color-primary: #f59e0b; /** TODO: confirm brand primary */
+  --color-primary-hover: #d97706;
+  --color-highlight: #10b981;
+  --color-surface-dark: #1c1a16;
+  --color-surface-med: #fffbeb;
+  --color-surface: #fefce8;
+  --color-surface-light: #ffffff;
+  --color-text: #1c1a16;
+  --color-text-light: #57534e;
+  --color-text-muted: #78716c;
+  --color-text-inverse: #fefce8;
+  --color-text-inverse-light: #d6d3d1;
+  --color-text-inverse-muted: #a8a29e;
+  --color-border-light: #fef3c7;
+  --color-border: #fde68a;
+  --color-border-dark: #f59e0b;
+  --color-overlay-light: rgba(0, 0, 0, 0.04);
+  --color-overlay-med: rgba(0, 0, 0, 0.08);
+  --color-overlay-dark: rgba(0, 0, 0, 0.16);
+  --color-scrim: rgba(0, 0, 0, 0.4);
+  --font-family-sans: Inter, system-ui, sans-serif;
+  --font-family-mono: 'JetBrains Mono', monospace;
+}
