@@ -93,6 +93,23 @@ Source of truth: `callthedesignguy-website/src/app/globals.css`. Figma uses desk
 | Heading/7xl | 120px | 110% (tighter) | `--text-7xl` |
 | Display | 200px | 100% (none) | `--text-display` |
 
+#### Effect Styles
+
+Source of truth: `callthedesignguy-website/src/app/globals.css`. Single-mode for now — add theme modes when Plumb (dark theme) UI work begins, as dark backgrounds need different shadow values.
+
+| Style | Layers | Shadow values | CSS token |
+|---|---|---|---|
+| Shadow/sm | 1 | y:1 blur:2 black/4% | `--shadow-sm` |
+| Shadow/default | 2 | y:1 blur:3 black/6% + y:1 blur:2 black/4% | `--shadow-default` |
+| Shadow/md | 2 | y:4 blur:12 black/7% + y:2 blur:4 black/4% | `--shadow-md` *(added — gap in website code)* |
+| Shadow/lg | 2 | y:10 blur:24 black/6% + y:4 blur:10 black/4% | `--shadow-lg` |
+| Shadow/xl | 2 | y:20 blur:40 black/8% + y:8 blur:16 black/6% | `--shadow-xl` |
+| Shadow/popover | 2 | y:24 blur:48 navy/10% + y:6 blur:16 navy/6% | `--shadow-popover` |
+
+`--shadow-focus-ring` skipped — uses `var(--color-primary)` and `color-mix()` which Figma effect styles can't reference. Applied per-component instead.
+
+`--shadow-md` is a design system addition not yet in the website code. Add to `globals.css` when syncing.
+
 #### Decisions Made
 
 - **Modes over separate collections** — one Theme collection with 3 modes instead of 3 separate color collections. Enables one-click theme switching on any frame.
@@ -107,7 +124,6 @@ Source of truth: `callthedesignguy-website/src/app/globals.css`. Figma uses desk
 
 ## What's Next
 
-1. **Effect Styles** — shadows (sm, default, lg, xl, popover, focus-ring) sourced from `globals.css`.
-2. **Token documentation page** — populate the existing section frames with visual swatches for print review.
-3. **Lock in brand fonts** — update `family/primary` and `family/secondary` per mode when brand fonts are decided.
-4. **Sync code tokens** — update `tokens/core/typography.json` font family names to match primary/secondary/accent/code convention.
+1. **Token documentation page** — populate the existing section frames with visual swatches for print review.
+2. **Lock in brand fonts** — update `family/primary` and `family/secondary` per mode when brand fonts are decided.
+3. **Sync code tokens** — update `tokens/core/typography.json` font family names to match primary/secondary/accent/code convention, and add `--shadow-md` to `globals.css`.
