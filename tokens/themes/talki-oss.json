@@ -51,8 +51,8 @@
   },
   "font": {
     "family": {
-      "primary":   { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
-      "secondary": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "primary":   { "$type": "fontFamily", "$value": ["Stack Sans Text", "system-ui", "sans-serif"] },
+      "secondary": { "$type": "fontFamily", "$value": ["Zalando Sans", "system-ui", "sans-serif"] },
       "accent":    { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
       "code":      { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
     }

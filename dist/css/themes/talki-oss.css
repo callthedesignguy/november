@@ -35,8 +35,8 @@
   --color-overlay-med: rgba(0, 0, 0, 0.08);
   --color-overlay-dark: rgba(0, 0, 0, 0.16);
   --color-scrim: rgba(0, 0, 0, 0.4);
-  --font-family-primary: Inter, system-ui, sans-serif;
-  --font-family-secondary: Inter, system-ui, sans-serif;
+  --font-family-primary: 'Stack Sans Text', system-ui, sans-serif;
+  --font-family-secondary: 'Zalando Sans', system-ui, sans-serif;
   --font-family-accent: Inter, system-ui, sans-serif;
   --font-family-code: 'JetBrains Mono', monospace;
 }

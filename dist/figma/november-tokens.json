@@ -959,7 +959,7 @@
         "primary": {
           "$type": "fontFamily",
           "$value": [
-            "Inter",
+            "Stack Sans Text",
             "system-ui",
             "sans-serif"
           ]
@@ -967,7 +967,7 @@
         "secondary": {
           "$type": "fontFamily",
           "$value": [
-            "Inter",
+            "Zalando Sans",
             "system-ui",
             "sans-serif"
           ]
