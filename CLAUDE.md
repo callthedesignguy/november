@@ -19,7 +19,7 @@ File: https://www.figma.com/design/2Bqqcesrygi9M6EAlBSbE6/November-Design-System
 
 | Collection | Modes | Variables | Purpose |
 |------------|-------|-----------|---------|
-| **Theme** | Plumb, Hippo, Talki-OSS | 24 | Colors (20) + font families (4). Mode-switching on any frame swaps the full palette and fonts. |
+| **Theme** | Plumb, Hippo, Talki-OSS | 36 | Colors (32) + font families (4). Mode-switching on any frame swaps the full palette and fonts. |
 | Spacing | Default | 21 | 4px base, 4–160px scale |
 | Radius | Default | 8 | xs through full |
 | Typography | Default | 17 | Font sizes, weights, leading, tracking (shared across themes) |
@@ -47,11 +47,29 @@ All values are placeholders. Update per mode when brand fonts are decided.
 | Group | Tokens | Scopes |
 |-------|--------|--------|
 | brand | `color/primary`, `color/primary-hover`, `color/highlight` | ALL_FILLS, STROKE_COLOR |
-| surface | `color/surface/{dark,med,default,light}` | FRAME_FILL, SHAPE_FILL |
+| surface | `color/surface/{highlight,primary,secondary,tertiary}` | FRAME_FILL, SHAPE_FILL, STROKE_COLOR |
+| surface-inverse | `color/surface/{inverse-highlight,inverse-primary,inverse-secondary,inverse-tertiary}` | FRAME_FILL, SHAPE_FILL, STROKE_COLOR |
+| action | `color/action/{fill,fill-hover,fill-subtle,fill-subtle-hover,on-fill}` | fill* → FRAME_FILL, SHAPE_FILL, STROKE_COLOR / on-fill → TEXT_FILL |
+| status | `color/status/{warning,warning-subtle,negative,negative-subtle,positive,positive-subtle}` | FRAME_FILL, SHAPE_FILL, STROKE_COLOR |
 | content | `color/text/{default,light,muted}` | TEXT_FILL |
 | content-inverse | `color/text/{inverse,inverse-light,inverse-muted}` | TEXT_FILL |
-| border | `color/border/{light,default,dark}` | STROKE_COLOR |
 | overlay | `color/overlay/{light,med,dark}`, `color/scrim` | FRAME_FILL, SHAPE_FILL |
+
+**Surface naming convention** (matches reference system — highlight → primary → secondary → tertiary from most elevated to deepest):
+- Regular surfaces: page backgrounds, cards, panels
+- Inverse surfaces: dark sections on light themes, light sections on dark themes
+- No dedicated border tokens — use `surface/secondary` or `surface/tertiary` for strokes (surface tokens are STROKE_COLOR scoped)
+
+**Action token values per theme:**
+- `action/fill` = brand primary per theme (Plumb: #5C6EFF, Hippo: #7C3AED, Talki-OSS: #F59E0B)
+- `action/on-fill` = white for Plumb/Hippo, dark (#1C1A16) for Talki-OSS (amber needs dark text for contrast)
+- `action/fill-subtle` = low-opacity tint of brand primary (ghost/secondary button bg)
+
+**Status token values:**
+- warning: amber #D97706 across all themes (note: clashes with Talki-OSS brand — fine-tune if needed)
+- negative: red #DC2626 across all themes
+- positive: emerald #10B981 across all themes
+- subtle variants: transparent overlay on Plumb (dark), opaque pastel on Hippo/Talki-OSS (light)
 
 #### Text Styles
 
@@ -118,12 +136,17 @@ Source of truth: `callthedesignguy-website/src/app/globals.css`. Single-mode for
 - **Text styles bound to font family variables** — changing a `family/*` variable value instantly updates all text styles using it across any frame in that mode.
 - **Type scale sourced from callthedesignguy-website** — `globals.css` is the reference. Figma uses desktop/max values for clamp() sizes.
 - **No primitives tier** — tokens are already semantic (`color/primary` not `blue/500`). Add a primitives layer only if the palette grows.
-- **No status colors yet** (danger, warning, positive) — add when needed, with primary/secondary pairs.
+- **Surface naming: highlight/primary/secondary/tertiary** — elevation-agnostic, works across dark and light themes. Replaced dark/med/default/light which implied a color direction and broke on Plumb.
+- **Inverse surfaces mirror regular** — 4 regular + 4 inverse = 8 total surface tokens. Inverse used for dark sections on light themes, light sections on dark themes.
+- **No dedicated border tokens** — removed color/border/* group. Surface tokens handle strokes (STROKE_COLOR scope added to all surface tokens). Use surface/secondary or surface/tertiary for dividers.
+- **Action tokens separate from brand** — color/action/* holds interactive fills so components don't reference brand tokens directly. Allows action and brand to diverge per theme if needed.
+- **Status colors added** — warning/negative/positive with subtle variants. Subtle = transparent overlay on dark themes, opaque pastel on light themes.
 - **Text-transform not tokenized** — Figma doesn't support it as a property.
 - **Code syntax set on all variables** — WEB platform, maps to CSS custom property names.
 
 ## What's Next
 
-1. **Token documentation page** — populate the existing section frames with visual swatches for print review.
+1. **Sync code tokens** — update `tokens/core/typography.json` font family names (sans/mono → primary/secondary/accent/code), surface token names, add action + status groups, and add `--shadow-md` to `globals.css`.
 2. **Lock in brand fonts** — update `family/primary` and `family/secondary` per mode when brand fonts are decided.
-3. **Sync code tokens** — update `tokens/core/typography.json` font family names to match primary/secondary/accent/code convention, and add `--shadow-md` to `globals.css`.
+3. **Fine-tune Talki-OSS warning color** — status/warning is amber #D97706 which clashes with Talki-OSS brand primary. Adjust when building status UI in Talki.
+4. **Token documentation page** — populate the existing section frames with visual swatches for print review.

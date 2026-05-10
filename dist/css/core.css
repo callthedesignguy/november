@@ -48,8 +48,10 @@
   --space-32: 128px;
   --space-36: 144px;
   --space-40: 160px;
-  --font-family-sans: Geist, system-ui, -apple-system, sans-serif; /** Primary sans-serif — override per app theme */
-  --font-family-mono: 'JetBrains Mono', monospace; /** Monospace / accent — override per app theme */
+  --font-family-primary: Geist, system-ui, -apple-system, sans-serif; /** Heading/display font — override per theme mode */
+  --font-family-secondary: Geist, system-ui, -apple-system, sans-serif; /** Body/copy font — override per theme mode */
+  --font-family-accent: Inter, system-ui, sans-serif; /** Reserved for editorial or one-off components */
+  --font-family-code: 'JetBrains Mono', monospace; /** Monospace — not brand-driven */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
