@@ -1,36 +1,60 @@
 {
-  "$description": "Plumb (formerly Talki) — voice/comms product. Fill in brand colors.",
+  "$description": "Plumb — voice/comms product. Dark theme.",
   "color": {
-    "primary":        { "$type": "color", "$value": "#5C6EFF", "$description": "TODO: confirm brand primary" },
-    "primary-hover":  { "$type": "color", "$value": "#4A5CE8" },
-    "highlight":      { "$type": "color", "$value": "#10B981" },
+    "primary":       { "$type": "color", "$value": "#5C6EFF", "$description": "TODO: confirm brand primary" },
+    "primary-hover": { "$type": "color", "$value": "#4A5CE8" },
+    "highlight":     { "$type": "color", "$value": "#10B981" },
 
-    "surface-dark":   { "$type": "color", "$value": "#0F0F1A" },
-    "surface-med":    { "$type": "color", "$value": "#1E1E2E" },
-    "surface":        { "$type": "color", "$value": "#16161F" },
-    "surface-light":  { "$type": "color", "$value": "#1A1A28" },
+    "surface": {
+      "highlight":         { "$type": "color", "$value": "#1A1A28" },
+      "primary":           { "$type": "color", "$value": "#16161F" },
+      "secondary":         { "$type": "color", "$value": "#1E1E2E" },
+      "tertiary":          { "$type": "color", "$value": "#0F0F1A" },
+      "inverse-highlight": { "$type": "color", "$value": "#FFFFFF" },
+      "inverse-primary":   { "$type": "color", "$value": "#F4F4FF" },
+      "inverse-secondary": { "$type": "color", "$value": "#E8E8F5" },
+      "inverse-tertiary":  { "$type": "color", "$value": "#D0D0E0" }
+    },
 
-    "text":           { "$type": "color", "$value": "#F0F0FF" },
-    "text-light":     { "$type": "color", "$value": "#B0B4CC" },
-    "text-muted":     { "$type": "color", "$value": "#6E7299" },
+    "text": {
+      "default":       { "$type": "color", "$value": "#F0F0FF" },
+      "light":         { "$type": "color", "$value": "#B0B4CC" },
+      "muted":         { "$type": "color", "$value": "#6E7299" },
+      "inverse":       { "$type": "color", "$value": "#0F0F1A" },
+      "inverse-light": { "$type": "color", "$value": "#2A2A3E" },
+      "inverse-muted": { "$type": "color", "$value": "#4A4A6A" }
+    },
 
-    "text-inverse":       { "$type": "color", "$value": "#0F0F1A" },
-    "text-inverse-light": { "$type": "color", "$value": "#2A2A3E" },
-    "text-inverse-muted": { "$type": "color", "$value": "#4A4A6A" },
+    "action": {
+      "fill":              { "$type": "color", "$value": "#5C6EFF" },
+      "fill-hover":        { "$type": "color", "$value": "#4A5CE8" },
+      "fill-subtle":       { "$type": "color", "$value": "rgba(92, 110, 255, 0.12)" },
+      "fill-subtle-hover": { "$type": "color", "$value": "rgba(92, 110, 255, 0.20)" },
+      "on-fill":           { "$type": "color", "$value": "#FFFFFF" }
+    },
 
-    "border-light":   { "$type": "color", "$value": "#2A2A3E" },
-    "border":         { "$type": "color", "$value": "#3A3A5C" },
-    "border-dark":    { "$type": "color", "$value": "#5A5A80" },
+    "status": {
+      "warning":         { "$type": "color", "$value": "#D97706" },
+      "warning-subtle":  { "$type": "color", "$value": "rgba(217, 119, 6, 0.15)" },
+      "negative":        { "$type": "color", "$value": "#DC2626" },
+      "negative-subtle": { "$type": "color", "$value": "rgba(220, 38, 38, 0.15)" },
+      "positive":        { "$type": "color", "$value": "#10B981" },
+      "positive-subtle": { "$type": "color", "$value": "rgba(16, 185, 129, 0.15)" }
+    },
 
-    "overlay-light":  { "$type": "color", "$value": "rgba(255, 255, 255, 0.04)" },
-    "overlay-med":    { "$type": "color", "$value": "rgba(255, 255, 255, 0.08)" },
-    "overlay-dark":   { "$type": "color", "$value": "rgba(255, 255, 255, 0.16)" },
-    "scrim":          { "$type": "color", "$value": "rgba(0, 0, 0, 0.6)" }
+    "overlay": {
+      "light": { "$type": "color", "$value": "rgba(255, 255, 255, 0.04)" },
+      "med":   { "$type": "color", "$value": "rgba(255, 255, 255, 0.08)" },
+      "dark":  { "$type": "color", "$value": "rgba(255, 255, 255, 0.16)" }
+    },
+    "scrim": { "$type": "color", "$value": "rgba(0, 0, 0, 0.6)" }
   },
   "font": {
     "family": {
-      "sans": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
-      "mono": { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
+      "primary":   { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "secondary": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "accent":    { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "code":      { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
     }
   }
 }

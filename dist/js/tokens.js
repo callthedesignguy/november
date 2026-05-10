@@ -879,43 +879,81 @@ export default {
   },
   font: {
     family: {
-      sans: {
+      primary: {
         $type: "fontFamily",
         $value: ["Geist", "system-ui", "-apple-system", "sans-serif"],
-        $description: "Primary sans-serif — override per app theme",
+        $description: "Heading/display font — override per theme mode",
         filePath: "tokens/core/typography.json",
         isSource: true,
         original: {
           $type: "fontFamily",
           $value: ["Geist", "system-ui", "-apple-system", "sans-serif"],
-          $description: "Primary sans-serif — override per app theme",
+          $description: "Heading/display font — override per theme mode",
         },
-        name: "FontFamilySans",
+        name: "FontFamilyPrimary",
         attributes: {
           category: "font",
           type: "family",
-          item: "sans",
+          item: "primary",
         },
-        path: ["font", "family", "sans"],
+        path: ["font", "family", "primary"],
       },
-      mono: {
+      secondary: {
+        $type: "fontFamily",
+        $value: ["Geist", "system-ui", "-apple-system", "sans-serif"],
+        $description: "Body/copy font — override per theme mode",
+        filePath: "tokens/core/typography.json",
+        isSource: true,
+        original: {
+          $type: "fontFamily",
+          $value: ["Geist", "system-ui", "-apple-system", "sans-serif"],
+          $description: "Body/copy font — override per theme mode",
+        },
+        name: "FontFamilySecondary",
+        attributes: {
+          category: "font",
+          type: "family",
+          item: "secondary",
+        },
+        path: ["font", "family", "secondary"],
+      },
+      accent: {
+        $type: "fontFamily",
+        $value: ["Inter", "system-ui", "sans-serif"],
+        $description: "Reserved for editorial or one-off components",
+        filePath: "tokens/core/typography.json",
+        isSource: true,
+        original: {
+          $type: "fontFamily",
+          $value: ["Inter", "system-ui", "sans-serif"],
+          $description: "Reserved for editorial or one-off components",
+        },
+        name: "FontFamilyAccent",
+        attributes: {
+          category: "font",
+          type: "family",
+          item: "accent",
+        },
+        path: ["font", "family", "accent"],
+      },
+      code: {
         $type: "fontFamily",
         $value: ["JetBrains Mono", "monospace"],
-        $description: "Monospace / accent — override per app theme",
+        $description: "Monospace — not brand-driven",
         filePath: "tokens/core/typography.json",
         isSource: true,
         original: {
           $type: "fontFamily",
           $value: ["JetBrains Mono", "monospace"],
-          $description: "Monospace / accent — override per app theme",
+          $description: "Monospace — not brand-driven",
         },
-        name: "FontFamilyMono",
+        name: "FontFamilyCode",
         attributes: {
           category: "font",
           type: "family",
-          item: "mono",
+          item: "code",
         },
-        path: ["font", "family", "mono"],
+        path: ["font", "family", "code"],
       },
     },
     weight: {

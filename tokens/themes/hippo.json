@@ -1,36 +1,60 @@
 {
   "$description": "Hippo — fill in brand colors when design is ready.",
   "color": {
-    "primary":        { "$type": "color", "$value": "#7C3AED", "$description": "TODO: confirm brand primary" },
-    "primary-hover":  { "$type": "color", "$value": "#6D28D9" },
-    "highlight":      { "$type": "color", "$value": "#10B981" },
+    "primary":       { "$type": "color", "$value": "#7C3AED", "$description": "TODO: confirm brand primary" },
+    "primary-hover": { "$type": "color", "$value": "#6D28D9" },
+    "highlight":     { "$type": "color", "$value": "#10B981" },
 
-    "surface-dark":   { "$type": "color", "$value": "#1A1625" },
-    "surface-med":    { "$type": "color", "$value": "#F5F3FF" },
-    "surface":        { "$type": "color", "$value": "#FAFAFE" },
-    "surface-light":  { "$type": "color", "$value": "#FFFFFF" },
+    "surface": {
+      "highlight":         { "$type": "color", "$value": "#FFFFFF" },
+      "primary":           { "$type": "color", "$value": "#FAFAFE" },
+      "secondary":         { "$type": "color", "$value": "#F5F3FF" },
+      "tertiary":          { "$type": "color", "$value": "#1A1625" },
+      "inverse-highlight": { "$type": "color", "$value": "#2A2635" },
+      "inverse-primary":   { "$type": "color", "$value": "#1A1625" },
+      "inverse-secondary": { "$type": "color", "$value": "#120F1C" },
+      "inverse-tertiary":  { "$type": "color", "$value": "#0A0814" }
+    },
 
-    "text":           { "$type": "color", "$value": "#1A1625" },
-    "text-light":     { "$type": "color", "$value": "#4B4869" },
-    "text-muted":     { "$type": "color", "$value": "#7C789A" },
+    "text": {
+      "default":       { "$type": "color", "$value": "#1A1625" },
+      "light":         { "$type": "color", "$value": "#4B4869" },
+      "muted":         { "$type": "color", "$value": "#7C789A" },
+      "inverse":       { "$type": "color", "$value": "#FAFAFE" },
+      "inverse-light": { "$type": "color", "$value": "#C4C0E0" },
+      "inverse-muted": { "$type": "color", "$value": "#9A96BC" }
+    },
 
-    "text-inverse":       { "$type": "color", "$value": "#FAFAFE" },
-    "text-inverse-light": { "$type": "color", "$value": "#C4C0E0" },
-    "text-inverse-muted": { "$type": "color", "$value": "#9A96BC" },
+    "action": {
+      "fill":              { "$type": "color", "$value": "#7C3AED" },
+      "fill-hover":        { "$type": "color", "$value": "#6D28D9" },
+      "fill-subtle":       { "$type": "color", "$value": "rgba(124, 58, 237, 0.08)" },
+      "fill-subtle-hover": { "$type": "color", "$value": "rgba(124, 58, 237, 0.16)" },
+      "on-fill":           { "$type": "color", "$value": "#FFFFFF" }
+    },
 
-    "border-light":   { "$type": "color", "$value": "#EDE9FE" },
-    "border":         { "$type": "color", "$value": "#D4CFF5" },
-    "border-dark":    { "$type": "color", "$value": "#A89FD8" },
+    "status": {
+      "warning":         { "$type": "color", "$value": "#D97706" },
+      "warning-subtle":  { "$type": "color", "$value": "#FEF3C7" },
+      "negative":        { "$type": "color", "$value": "#DC2626" },
+      "negative-subtle": { "$type": "color", "$value": "#FEE2E2" },
+      "positive":        { "$type": "color", "$value": "#10B981" },
+      "positive-subtle": { "$type": "color", "$value": "#D1FAE5" }
+    },
 
-    "overlay-light":  { "$type": "color", "$value": "rgba(0, 0, 0, 0.04)" },
-    "overlay-med":    { "$type": "color", "$value": "rgba(0, 0, 0, 0.08)" },
-    "overlay-dark":   { "$type": "color", "$value": "rgba(0, 0, 0, 0.16)" },
-    "scrim":          { "$type": "color", "$value": "rgba(0, 0, 0, 0.4)" }
+    "overlay": {
+      "light": { "$type": "color", "$value": "rgba(0, 0, 0, 0.04)" },
+      "med":   { "$type": "color", "$value": "rgba(0, 0, 0, 0.08)" },
+      "dark":  { "$type": "color", "$value": "rgba(0, 0, 0, 0.16)" }
+    },
+    "scrim": { "$type": "color", "$value": "rgba(0, 0, 0, 0.4)" }
   },
   "font": {
     "family": {
-      "sans": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
-      "mono": { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
+      "primary":   { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "secondary": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "accent":    { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "code":      { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
     }
   }
 }

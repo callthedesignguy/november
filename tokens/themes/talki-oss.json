@@ -1,36 +1,60 @@
 {
-  "$description": "Talki OSS — open source product. Fill in brand colors when design is ready.",
+  "$description": "Talki OSS — open source screen recording and video sharing product.",
   "color": {
-    "primary":        { "$type": "color", "$value": "#F59E0B", "$description": "TODO: confirm brand primary" },
-    "primary-hover":  { "$type": "color", "$value": "#D97706" },
-    "highlight":      { "$type": "color", "$value": "#10B981" },
+    "primary":       { "$type": "color", "$value": "#0E2FB4" },
+    "primary-hover": { "$type": "color", "$value": "#0B25A0" },
+    "highlight":     { "$type": "color", "$value": "#FF2736" },
 
-    "surface-dark":   { "$type": "color", "$value": "#1C1A16" },
-    "surface-med":    { "$type": "color", "$value": "#FFFBEB" },
-    "surface":        { "$type": "color", "$value": "#FEFCE8" },
-    "surface-light":  { "$type": "color", "$value": "#FFFFFF" },
+    "surface": {
+      "highlight":        { "$type": "color", "$value": "#FFFFFF" },
+      "primary":          { "$type": "color", "$value": "#F9FAFE" },
+      "secondary":        { "$type": "color", "$value": "#F0F2FC" },
+      "tertiary":         { "$type": "color", "$value": "#E2E6F4" },
+      "inverse-highlight":{ "$type": "color", "$value": "#2A3A7A" },
+      "inverse-primary":  { "$type": "color", "$value": "#1C2B6A" },
+      "inverse-secondary":{ "$type": "color", "$value": "#0F1D55" },
+      "inverse-tertiary": { "$type": "color", "$value": "#081040" }
+    },
 
-    "text":           { "$type": "color", "$value": "#1C1A16" },
-    "text-light":     { "$type": "color", "$value": "#57534E" },
-    "text-muted":     { "$type": "color", "$value": "#78716C" },
+    "text": {
+      "default":       { "$type": "color", "$value": "#111827" },
+      "light":         { "$type": "color", "$value": "#4B5563" },
+      "muted":         { "$type": "color", "$value": "#9CA3AF" },
+      "inverse":       { "$type": "color", "$value": "#FFFFFF" },
+      "inverse-light": { "$type": "color", "$value": "#C7D2FE" },
+      "inverse-muted": { "$type": "color", "$value": "#A5B4FC" }
+    },
 
-    "text-inverse":       { "$type": "color", "$value": "#FEFCE8" },
-    "text-inverse-light": { "$type": "color", "$value": "#D6D3D1" },
-    "text-inverse-muted": { "$type": "color", "$value": "#A8A29E" },
+    "action": {
+      "fill":              { "$type": "color", "$value": "#0E2FB4" },
+      "fill-hover":        { "$type": "color", "$value": "#0B25A0" },
+      "fill-subtle":       { "$type": "color", "$value": "rgba(14, 47, 180, 0.08)" },
+      "fill-subtle-hover": { "$type": "color", "$value": "rgba(14, 47, 180, 0.14)" },
+      "on-fill":           { "$type": "color", "$value": "#FFFFFF" }
+    },
 
-    "border-light":   { "$type": "color", "$value": "#FEF3C7" },
-    "border":         { "$type": "color", "$value": "#FDE68A" },
-    "border-dark":    { "$type": "color", "$value": "#F59E0B" },
+    "status": {
+      "warning":         { "$type": "color", "$value": "#F59E0B" },
+      "warning-subtle":  { "$type": "color", "$value": "#FEF3C7" },
+      "negative":        { "$type": "color", "$value": "#DC2626" },
+      "negative-subtle": { "$type": "color", "$value": "#FEE2E2" },
+      "positive":        { "$type": "color", "$value": "#10B981" },
+      "positive-subtle": { "$type": "color", "$value": "#D1FAE5" }
+    },
 
-    "overlay-light":  { "$type": "color", "$value": "rgba(0, 0, 0, 0.04)" },
-    "overlay-med":    { "$type": "color", "$value": "rgba(0, 0, 0, 0.08)" },
-    "overlay-dark":   { "$type": "color", "$value": "rgba(0, 0, 0, 0.16)" },
-    "scrim":          { "$type": "color", "$value": "rgba(0, 0, 0, 0.4)" }
+    "overlay": {
+      "light": { "$type": "color", "$value": "rgba(0, 0, 0, 0.04)" },
+      "med":   { "$type": "color", "$value": "rgba(0, 0, 0, 0.08)" },
+      "dark":  { "$type": "color", "$value": "rgba(0, 0, 0, 0.16)" }
+    },
+    "scrim": { "$type": "color", "$value": "rgba(0, 0, 0, 0.40)" }
   },
   "font": {
     "family": {
-      "sans": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
-      "mono": { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
+      "primary":   { "$type": "fontFamily", "$value": ["Stack Sans Text", "system-ui", "sans-serif"] },
+      "secondary": { "$type": "fontFamily", "$value": ["Zalando Sans", "system-ui", "sans-serif"] },
+      "accent":    { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "code":      { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
     }
   }
 }

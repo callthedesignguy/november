@@ -3,7 +3,7 @@
     "typography": {
       "font": {
         "family": {
-          "sans": {
+          "primary": {
             "$type": "fontFamily",
             "$value": [
               "Geist",
@@ -11,15 +11,34 @@
               "-apple-system",
               "sans-serif"
             ],
-            "$description": "Primary sans-serif — override per app theme"
+            "$description": "Heading/display font — override per theme mode"
           },
-          "mono": {
+          "secondary": {
+            "$type": "fontFamily",
+            "$value": [
+              "Geist",
+              "system-ui",
+              "-apple-system",
+              "sans-serif"
+            ],
+            "$description": "Body/copy font — override per theme mode"
+          },
+          "accent": {
+            "$type": "fontFamily",
+            "$value": [
+              "Inter",
+              "system-ui",
+              "sans-serif"
+            ],
+            "$description": "Reserved for editorial or one-off components"
+          },
+          "code": {
             "$type": "fontFamily",
             "$value": [
               "JetBrains Mono",
               "monospace"
             ],
-            "$description": "Monospace / accent — override per app theme"
+            "$description": "Monospace — not brand-driven"
           }
         },
         "weight": {
@@ -436,7 +455,7 @@
     }
   },
   "plumb": {
-    "$description": "Plumb (formerly Talki) — voice/comms product. Fill in brand colors.",
+    "$description": "Plumb — voice/comms product. Dark theme.",
     "color": {
       "primary": {
         "$type": "color",
@@ -451,69 +470,127 @@
         "$type": "color",
         "$value": "#10B981"
       },
-      "surface-dark": {
-        "$type": "color",
-        "$value": "#0F0F1A"
-      },
-      "surface-med": {
-        "$type": "color",
-        "$value": "#1E1E2E"
-      },
       "surface": {
-        "$type": "color",
-        "$value": "#16161F"
-      },
-      "surface-light": {
-        "$type": "color",
-        "$value": "#1A1A28"
+        "highlight": {
+          "$type": "color",
+          "$value": "#1A1A28"
+        },
+        "primary": {
+          "$type": "color",
+          "$value": "#16161F"
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "#1E1E2E"
+        },
+        "tertiary": {
+          "$type": "color",
+          "$value": "#0F0F1A"
+        },
+        "inverse-highlight": {
+          "$type": "color",
+          "$value": "#FFFFFF"
+        },
+        "inverse-primary": {
+          "$type": "color",
+          "$value": "#F4F4FF"
+        },
+        "inverse-secondary": {
+          "$type": "color",
+          "$value": "#E8E8F5"
+        },
+        "inverse-tertiary": {
+          "$type": "color",
+          "$value": "#D0D0E0"
+        }
       },
       "text": {
-        "$type": "color",
-        "$value": "#F0F0FF"
+        "default": {
+          "$type": "color",
+          "$value": "#F0F0FF"
+        },
+        "light": {
+          "$type": "color",
+          "$value": "#B0B4CC"
+        },
+        "muted": {
+          "$type": "color",
+          "$value": "#6E7299"
+        },
+        "inverse": {
+          "$type": "color",
+          "$value": "#0F0F1A"
+        },
+        "inverse-light": {
+          "$type": "color",
+          "$value": "#2A2A3E"
+        },
+        "inverse-muted": {
+          "$type": "color",
+          "$value": "#4A4A6A"
+        }
       },
-      "text-light": {
-        "$type": "color",
-        "$value": "#B0B4CC"
+      "action": {
+        "fill": {
+          "$type": "color",
+          "$value": "#5C6EFF"
+        },
+        "fill-hover": {
+          "$type": "color",
+          "$value": "#4A5CE8"
+        },
+        "fill-subtle": {
+          "$type": "color",
+          "$value": "rgba(92, 110, 255, 0.12)"
+        },
+        "fill-subtle-hover": {
+          "$type": "color",
+          "$value": "rgba(92, 110, 255, 0.20)"
+        },
+        "on-fill": {
+          "$type": "color",
+          "$value": "#FFFFFF"
+        }
       },
-      "text-muted": {
-        "$type": "color",
-        "$value": "#6E7299"
+      "status": {
+        "warning": {
+          "$type": "color",
+          "$value": "#D97706"
+        },
+        "warning-subtle": {
+          "$type": "color",
+          "$value": "rgba(217, 119, 6, 0.15)"
+        },
+        "negative": {
+          "$type": "color",
+          "$value": "#DC2626"
+        },
+        "negative-subtle": {
+          "$type": "color",
+          "$value": "rgba(220, 38, 38, 0.15)"
+        },
+        "positive": {
+          "$type": "color",
+          "$value": "#10B981"
+        },
+        "positive-subtle": {
+          "$type": "color",
+          "$value": "rgba(16, 185, 129, 0.15)"
+        }
       },
-      "text-inverse": {
-        "$type": "color",
-        "$value": "#0F0F1A"
-      },
-      "text-inverse-light": {
-        "$type": "color",
-        "$value": "#2A2A3E"
-      },
-      "text-inverse-muted": {
-        "$type": "color",
-        "$value": "#4A4A6A"
-      },
-      "border-light": {
-        "$type": "color",
-        "$value": "#2A2A3E"
-      },
-      "border": {
-        "$type": "color",
-        "$value": "#3A3A5C"
-      },
-      "border-dark": {
-        "$type": "color",
-        "$value": "#5A5A80"
-      },
-      "overlay-light": {
-        "$type": "color",
-        "$value": "rgba(255, 255, 255, 0.04)"
-      },
-      "overlay-med": {
-        "$type": "color",
-        "$value": "rgba(255, 255, 255, 0.08)"
-      },
-      "overlay-dark": {
-        "$type": "color",
-        "$value": "rgba(255, 255, 255, 0.16)"
+      "overlay": {
+        "light": {
+          "$type": "color",
+          "$value": "rgba(255, 255, 255, 0.04)"
+        },
+        "med": {
+          "$type": "color",
+          "$value": "rgba(255, 255, 255, 0.08)"
+        },
+        "dark": {
+          "$type": "color",
+          "$value": "rgba(255, 255, 255, 0.16)"
+        }
       },
       "scrim": {
         "$type": "color",
@@ -522,7 +599,7 @@
     },
     "font": {
       "family": {
-        "sans": {
+        "primary": {
           "$type": "fontFamily",
           "$value": [
             "Inter",
@@ -530,7 +607,23 @@
             "sans-serif"
           ]
         },
-        "mono": {
+        "secondary": {
+          "$type": "fontFamily",
+          "$value": [
+            "Inter",
+            "system-ui",
+            "sans-serif"
+          ]
+        },
+        "accent": {
+          "$type": "fontFamily",
+          "$value": [
+            "Inter",
+            "system-ui",
+            "sans-serif"
+          ]
+        },
+        "code": {
           "$type": "fontFamily",
           "$value": [
             "JetBrains Mono",
@@ -556,69 +649,127 @@
         "$type": "color",
         "$value": "#10B981"
       },
-      "surface-dark": {
-        "$type": "color",
-        "$value": "#1A1625"
-      },
-      "surface-med": {
-        "$type": "color",
-        "$value": "#F5F3FF"
-      },
       "surface": {
-        "$type": "color",
-        "$value": "#FAFAFE"
-      },
-      "surface-light": {
-        "$type": "color",
-        "$value": "#FFFFFF"
+        "highlight": {
+          "$type": "color",
+          "$value": "#FFFFFF"
+        },
+        "primary": {
+          "$type": "color",
+          "$value": "#FAFAFE"
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "#F5F3FF"
+        },
+        "tertiary": {
+          "$type": "color",
+          "$value": "#1A1625"
+        },
+        "inverse-highlight": {
+          "$type": "color",
+          "$value": "#2A2635"
+        },
+        "inverse-primary": {
+          "$type": "color",
+          "$value": "#1A1625"
+        },
+        "inverse-secondary": {
+          "$type": "color",
+          "$value": "#120F1C"
+        },
+        "inverse-tertiary": {
+          "$type": "color",
+          "$value": "#0A0814"
+        }
       },
       "text": {
-        "$type": "color",
-        "$value": "#1A1625"
+        "default": {
+          "$type": "color",
+          "$value": "#1A1625"
+        },
+        "light": {
+          "$type": "color",
+          "$value": "#4B4869"
+        },
+        "muted": {
+          "$type": "color",
+          "$value": "#7C789A"
+        },
+        "inverse": {
+          "$type": "color",
+          "$value": "#FAFAFE"
+        },
+        "inverse-light": {
+          "$type": "color",
+          "$value": "#C4C0E0"
+        },
+        "inverse-muted": {
+          "$type": "color",
+          "$value": "#9A96BC"
+        }
       },
-      "text-light": {
-        "$type": "color",
-        "$value": "#4B4869"
+      "action": {
+        "fill": {
+          "$type": "color",
+          "$value": "#7C3AED"
+        },
+        "fill-hover": {
+          "$type": "color",
+          "$value": "#6D28D9"
+        },
+        "fill-subtle": {
+          "$type": "color",
+          "$value": "rgba(124, 58, 237, 0.08)"
+        },
+        "fill-subtle-hover": {
+          "$type": "color",
+          "$value": "rgba(124, 58, 237, 0.16)"
+        },
+        "on-fill": {
+          "$type": "color",
+          "$value": "#FFFFFF"
+        }
       },
-      "text-muted": {
-        "$type": "color",
-        "$value": "#7C789A"
+      "status": {
+        "warning": {
+          "$type": "color",
+          "$value": "#D97706"
+        },
+        "warning-subtle": {
+          "$type": "color",
+          "$value": "#FEF3C7"
+        },
+        "negative": {
+          "$type": "color",
+          "$value": "#DC2626"
+        },
+        "negative-subtle": {
+          "$type": "color",
+          "$value": "#FEE2E2"
+        },
+        "positive": {
+          "$type": "color",
+          "$value": "#10B981"
+        },
+        "positive-subtle": {
+          "$type": "color",
+          "$value": "#D1FAE5"
+        }
       },
-      "text-inverse": {
-        "$type": "color",
-        "$value": "#FAFAFE"
-      },
-      "text-inverse-light": {
-        "$type": "color",
-        "$value": "#C4C0E0"
-      },
-      "text-inverse-muted": {
-        "$type": "color",
-        "$value": "#9A96BC"
-      },
-      "border-light": {
-        "$type": "color",
-        "$value": "#EDE9FE"
-      },
-      "border": {
-        "$type": "color",
-        "$value": "#D4CFF5"
-      },
-      "border-dark": {
-        "$type": "color",
-        "$value": "#A89FD8"
-      },
-      "overlay-light": {
-        "$type": "color",
-        "$value": "rgba(0, 0, 0, 0.04)"
-      },
-      "overlay-med": {
-        "$type": "color",
-        "$value": "rgba(0, 0, 0, 0.08)"
-      },
-      "overlay-dark": {
-        "$type": "color",
-        "$value": "rgba(0, 0, 0, 0.16)"
+      "overlay": {
+        "light": {
+          "$type": "color",
+          "$value": "rgba(0, 0, 0, 0.04)"
+        },
+        "med": {
+          "$type": "color",
+          "$value": "rgba(0, 0, 0, 0.08)"
+        },
+        "dark": {
+          "$type": "color",
+          "$value": "rgba(0, 0, 0, 0.16)"
+        }
       },
       "scrim": {
         "$type": "color",
@@ -627,7 +778,7 @@
     },
     "font": {
       "family": {
-        "sans": {
+        "primary": {
           "$type": "fontFamily",
           "$value": [
             "Inter",
@@ -635,7 +786,23 @@
             "sans-serif"
           ]
         },
-        "mono": {
+        "secondary": {
+          "$type": "fontFamily",
+          "$value": [
+            "Inter",
+            "system-ui",
+            "sans-serif"
+          ]
+        },
+        "accent": {
+          "$type": "fontFamily",
+          "$value": [
+            "Inter",
+            "system-ui",
+            "sans-serif"
+          ]
+        },
+        "code": {
           "$type": "fontFamily",
           "$value": [
             "JetBrains Mono",
@@ -646,93 +813,166 @@
     }
   },
   "talki-oss": {
-    "$description": "Talki OSS — open source product. Fill in brand colors when design is ready.",
+    "$description": "Talki OSS — open source screen recording and video sharing product.",
     "color": {
       "primary": {
         "$type": "color",
-        "$value": "#F59E0B",
-        "$description": "TODO: confirm brand primary"
+        "$value": "#0E2FB4"
       },
       "primary-hover": {
         "$type": "color",
-        "$value": "#D97706"
+        "$value": "#0B25A0"
       },
       "highlight": {
         "$type": "color",
-        "$value": "#10B981"
-      },
-      "surface-dark": {
-        "$type": "color",
-        "$value": "#1C1A16"
-      },
-      "surface-med": {
-        "$type": "color",
-        "$value": "#FFFBEB"
+        "$value": "#FF2736"
       },
       "surface": {
-        "$type": "color",
-        "$value": "#FEFCE8"
-      },
-      "surface-light": {
-        "$type": "color",
-        "$value": "#FFFFFF"
+        "highlight": {
+          "$type": "color",
+          "$value": "#FFFFFF"
+        },
+        "primary": {
+          "$type": "color",
+          "$value": "#F9FAFE"
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "#F0F2FC"
+        },
+        "tertiary": {
+          "$type": "color",
+          "$value": "#E2E6F4"
+        },
+        "inverse-highlight": {
+          "$type": "color",
+          "$value": "#2A3A7A"
+        },
+        "inverse-primary": {
+          "$type": "color",
+          "$value": "#1C2B6A"
+        },
+        "inverse-secondary": {
+          "$type": "color",
+          "$value": "#0F1D55"
+        },
+        "inverse-tertiary": {
+          "$type": "color",
+          "$value": "#081040"
+        }
       },
       "text": {
-        "$type": "color",
-        "$value": "#1C1A16"
+        "default": {
+          "$type": "color",
+          "$value": "#111827"
+        },
+        "light": {
+          "$type": "color",
+          "$value": "#4B5563"
+        },
+        "muted": {
+          "$type": "color",
+          "$value": "#9CA3AF"
+        },
+        "inverse": {
+          "$type": "color",
+          "$value": "#FFFFFF"
+        },
+        "inverse-light": {
+          "$type": "color",
+          "$value": "#C7D2FE"
+        },
+        "inverse-muted": {
+          "$type": "color",
+          "$value": "#A5B4FC"
+        }
       },
-      "text-light": {
-        "$type": "color",
-        "$value": "#57534E"
+      "action": {
+        "fill": {
+          "$type": "color",
+          "$value": "#0E2FB4"
+        },
+        "fill-hover": {
+          "$type": "color",
+          "$value": "#0B25A0"
+        },
+        "fill-subtle": {
+          "$type": "color",
+          "$value": "rgba(14, 47, 180, 0.08)"
+        },
+        "fill-subtle-hover": {
+          "$type": "color",
+          "$value": "rgba(14, 47, 180, 0.14)"
+        },
+        "on-fill": {
+          "$type": "color",
+          "$value": "#FFFFFF"
+        }
       },
-      "text-muted": {
-        "$type": "color",
-        "$value": "#78716C"
+      "status": {
+        "warning": {
+          "$type": "color",
+          "$value": "#F59E0B"
+        },
+        "warning-subtle": {
+          "$type": "color",
+          "$value": "#FEF3C7"
+        },
+        "negative": {
+          "$type": "color",
+          "$value": "#DC2626"
+        },
+        "negative-subtle": {
+          "$type": "color",
+          "$value": "#FEE2E2"
+        },
+        "positive": {
+          "$type": "color",
+          "$value": "#10B981"
+        },
+        "positive-subtle": {
+          "$type": "color",
+          "$value": "#D1FAE5"
+        }
       },
-      "text-inverse": {
-        "$type": "color",
-        "$value": "#FEFCE8"
-      },
-      "text-inverse-light": {
-        "$type": "color",
-        "$value": "#D6D3D1"
-      },
-      "text-inverse-muted": {
-        "$type": "color",
-        "$value": "#A8A29E"
-      },
-      "border-light": {
-        "$type": "color",
-        "$value": "#FEF3C7"
-      },
-      "border": {
-        "$type": "color",
-        "$value": "#FDE68A"
-      },
-      "border-dark": {
-        "$type": "color",
-        "$value": "#F59E0B"
-      },
-      "overlay-light": {
-        "$type": "color",
-        "$value": "rgba(0, 0, 0, 0.04)"
-      },
-      "overlay-med": {
-        "$type": "color",
-        "$value": "rgba(0, 0, 0, 0.08)"
-      },
-      "overlay-dark": {
-        "$type": "color",
-        "$value": "rgba(0, 0, 0, 0.16)"
+      "overlay": {
+        "light": {
+          "$type": "color",
+          "$value": "rgba(0, 0, 0, 0.04)"
+        },
+        "med": {
+          "$type": "color",
+          "$value": "rgba(0, 0, 0, 0.08)"
+        },
+        "dark": {
+          "$type": "color",
+          "$value": "rgba(0, 0, 0, 0.16)"
+        }
       },
       "scrim": {
         "$type": "color",
-        "$value": "rgba(0, 0, 0, 0.4)"
+        "$value": "rgba(0, 0, 0, 0.40)"
       }
     },
     "font": {
       "family": {
-        "sans": {
+        "primary": {
+          "$type": "fontFamily",
+          "$value": [
+            "Stack Sans Text",
+            "system-ui",
+            "sans-serif"
+          ]
+        },
+        "secondary": {
+          "$type": "fontFamily",
+          "$value": [
+            "Zalando Sans",
+            "system-ui",
+            "sans-serif"
+          ]
+        },
+        "accent": {
           "$type": "fontFamily",
           "$value": [
             "Inter",
@@ -740,7 +980,7 @@
             "sans-serif"
           ]
         },
-        "mono": {
+        "code": {
           "$type": "fontFamily",
           "$value": [
             "JetBrains Mono",
