@@ -19,7 +19,7 @@ File: https://www.figma.com/design/2Bqqcesrygi9M6EAlBSbE6/November-Design-System
 
 | Collection | Modes | Variables | Purpose |
 |------------|-------|-----------|---------|
-| **Theme** | Plumb, Hippo, Talki-OSS | 36 | Colors (32) + font families (4). Mode-switching on any frame swaps the full palette and fonts. |
+| **Theme** | Plumb, Hippo, Talki-OSS | ~85 | Colors + font families + typography scale. Mode-switching on any frame swaps the full palette and fonts. |
 | Spacing | Default | 21 | 4px base, 4–160px scale |
 | Radius | Default | 8 | xs through full |
 | Typography | Default | 17 | Font sizes, weights, leading, tracking (shared across themes) |
@@ -44,25 +44,29 @@ All values are placeholders. Update per mode when brand fonts are decided.
 
 #### Theme Collection — Color Token Groups
 
-| Group | Tokens | Scopes |
-|-------|--------|--------|
-| brand | `color/primary`, `color/primary-hover`, `color/highlight` | ALL_FILLS, STROKE_COLOR |
-| surface | `color/surface/{highlight,primary,secondary,tertiary}` | FRAME_FILL, SHAPE_FILL, STROKE_COLOR |
-| surface-inverse | `color/surface/{inverse-highlight,inverse-primary,inverse-secondary,inverse-tertiary}` | FRAME_FILL, SHAPE_FILL, STROKE_COLOR |
-| action | `color/action/{fill,fill-hover,fill-subtle,fill-subtle-hover,on-fill}` | fill* → FRAME_FILL, SHAPE_FILL, STROKE_COLOR / on-fill → TEXT_FILL |
-| status | `color/status/{warning,warning-subtle,negative,negative-subtle,positive,positive-subtle}` | FRAME_FILL, SHAPE_FILL, STROKE_COLOR |
-| content | `color/text/{default,light,muted}` | TEXT_FILL |
-| content-inverse | `color/text/{inverse,inverse-light,inverse-muted}` | TEXT_FILL |
-| overlay | `color/overlay/{light,med,dark}`, `color/scrim` | FRAME_FILL, SHAPE_FILL |
+All color variables use `ALL_SCOPES` — no picker restrictions.
+
+| Group | Tokens |
+|-------|--------|
+| brand | `color/brand`, `color/brand-hover`, `color/brand-secondary` |
+| accent | `color/secondary`, `color/secondary-subtle`, `color/accent-a`, `color/accent-a-dark`, `color/accent-b`, `color/accent-b-dark`, `color/accent-c`, `color/accent-c-dark`, `color/accent-c-light` |
+| surface | `color/surface/{highlight,primary,secondary,tertiary}` |
+| surface-inverse | `color/surface/{inverse-highlight,inverse-primary,inverse-secondary,inverse-tertiary}` |
+| action | `color/action/{fill,fill-hover,fill-subtle,fill-subtle-hover,on-fill}` |
+| status | `color/status/{warning,warning-subtle,negative,negative-subtle,positive,positive-subtle}` |
+| text | `color/text/{base,neutral,placeholder,disabled,brand,danger,warning,success}` |
+| text-inverse | `color/text/{inverse-base,inverse-neutral,inverse-placeholder}` |
+| border | `color/border/{light,default,strong}` |
+| overlay | `color/overlay/{light,med,dark}`, `color/scrim` |
 
 **Surface naming convention** (matches reference system — highlight → primary → secondary → tertiary from most elevated to deepest):
 - Regular surfaces: page backgrounds, cards, panels
 - Inverse surfaces: dark sections on light themes, light sections on dark themes
-- No dedicated border tokens — use `surface/secondary` or `surface/tertiary` for strokes (surface tokens are STROKE_COLOR scoped)
+- `color/border/{light,default,strong}` for dividers and outlines
 
 **Action token values per theme:**
-- `action/fill` = brand primary per theme (Plumb: #5C6EFF, Hippo: #7C3AED, Talki-OSS: #F59E0B)
-- `action/on-fill` = white for Plumb/Hippo, dark (#1C1A16) for Talki-OSS (amber needs dark text for contrast)
+- `action/fill` = brand primary per theme (Plumb: #5C6EFF, Hippo: #FD6FB6, Talki-OSS: #0E2FB4)
+- `action/on-fill` = white for all three themes
 - `action/fill-subtle` = low-opacity tint of brand primary (ghost/secondary button bg)
 
 **Status token values:**
@@ -124,7 +128,7 @@ Source of truth: `callthedesignguy-website/src/app/globals.css`. Single-mode for
 | Shadow/xl | 2 | y:20 blur:40 black/8% + y:8 blur:16 black/6% | `--shadow-xl` |
 | Shadow/popover | 2 | y:24 blur:48 navy/10% + y:6 blur:16 navy/6% | `--shadow-popover` |
 
-`--shadow-focus-ring` skipped — uses `var(--color-primary)` and `color-mix()` which Figma effect styles can't reference. Applied per-component instead.
+`--shadow-focus-ring` skipped — uses `var(--color-brand)` and `color-mix()` which Figma effect styles can't reference. Applied per-component instead.
 
 `--shadow-md` is a design system addition not yet in the website code. Add to `globals.css` when syncing.
 
@@ -135,18 +139,22 @@ Source of truth: `callthedesignguy-website/src/app/globals.css`. Single-mode for
 - **primary/secondary/accent/code over sans/mono** — semantic naming that works across all themes regardless of typeface category.
 - **Text styles bound to font family variables** — changing a `family/*` variable value instantly updates all text styles using it across any frame in that mode.
 - **Type scale sourced from callthedesignguy-website** — `globals.css` is the reference. Figma uses desktop/max values for clamp() sizes.
-- **No primitives tier** — tokens are already semantic (`color/primary` not `blue/500`). Add a primitives layer only if the palette grows.
+- **No primitives tier** — tokens are already semantic (`color/brand` not `blue/500`). Add a primitives layer only if the palette grows.
 - **Surface naming: highlight/primary/secondary/tertiary** — elevation-agnostic, works across dark and light themes. Replaced dark/med/default/light which implied a color direction and broke on Plumb.
 - **Inverse surfaces mirror regular** — 4 regular + 4 inverse = 8 total surface tokens. Inverse used for dark sections on light themes, light sections on dark themes.
-- **No dedicated border tokens** — removed color/border/* group. Surface tokens handle strokes (STROKE_COLOR scope added to all surface tokens). Use surface/secondary or surface/tertiary for dividers.
+- **Border tokens added** — `color/border/{light,default,strong}` for dividers and outlines. Previously punted to surface tokens for strokes.
 - **Action tokens separate from brand** — color/action/* holds interactive fills so components don't reference brand tokens directly. Allows action and brand to diverge per theme if needed.
 - **Status colors added** — warning/negative/positive with subtle variants. Subtle = transparent overlay on dark themes, opaque pastel on light themes.
+- **Multi-accent palette for Hippo** — `color/accent-a/b/c` families for illustration fills. Stubbed in Plumb/Talki-OSS for Figma mode-switching compatibility.
+- **`color/primary` → `color/brand`, `color/highlight` → `color/brand-secondary`** — renamed for semantic clarity. `color/brand-hover` paired with `color/brand`.
+- **All color variables use ALL_SCOPES** — no picker restrictions; simpler than maintaining per-group scope rules.
 - **Text-transform not tokenized** — Figma doesn't support it as a property.
 - **Code syntax set on all variables** — WEB platform, maps to CSS custom property names.
 
 ## What's Next
 
-1. **Lock in brand fonts** — update `family/primary` and `family/secondary` per mode when brand fonts are decided.
-2. **Fine-tune Talki-OSS warning color** — status/warning is amber #D97706 which clashes with Talki-OSS brand primary. Adjust when building status UI in Talki.
-3. **Token documentation page** — populate the existing section frames with visual swatches for print review.
-4. **Verify Vercel deployment** — talki-oss uses `link:../november` which requires november to exist as a sibling directory during `yarn install`. Confirm Vercel build pipeline clones november before installing, or add an `installCommand` to `vercel.json`.
+1. **Lock in brand fonts** — Hippo is on SN Pro. Plumb `family/primary` and `family/secondary` still on Inter placeholder; update when Plumb brand fonts are decided.
+2. **Confirm Hippo hover colors** — `color/brand-hover` (#E8549E) and `color/action/fill-hover` (#E8549E) were derived; verify once real designs render.
+3. **Fine-tune Talki-OSS warning color** — status/warning is amber #D97706 which clashes with Talki-OSS brand primary. Adjust when building status UI in Talki.
+4. **Token documentation page** — populate the existing section frames with visual swatches for print review.
+5. **Verify Vercel deployment** — talki-oss uses `link:../november` which requires november to exist as a sibling directory during `yarn install`. Confirm Vercel build pipeline clones november before installing, or add an `installCommand` to `vercel.json`.
