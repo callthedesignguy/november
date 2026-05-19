@@ -478,16 +478,16 @@
   "plumb": {
     "$description": "Plumb — voice/comms product. Dark theme.",
     "color": {
-      "primary": {
+      "brand": {
         "$type": "color",
         "$value": "#5C6EFF",
         "$description": "TODO: confirm brand primary"
       },
-      "primary-hover": {
+      "brand-hover": {
         "$type": "color",
         "$value": "#4A5CE8"
       },
-      "highlight": {
+      "brand-secondary": {
         "$type": "color",
         "$value": "#10B981"
       },
@@ -514,6 +514,11 @@
       "accent-b": {
         "$type": "color",
         "$value": "#5C6EFF",
+        "$description": "Hippo-specific slot — stub"
+      },
+      "accent-b-dark": {
+        "$type": "color",
+        "$value": "#4A5CE8",
         "$description": "Hippo-specific slot — stub"
       },
       "accent-c": {
@@ -804,15 +809,15 @@
       }
     },
     "color": {
-      "primary": {
+      "brand": {
         "$type": "color",
         "$value": "{palette.pink.base}"
       },
-      "primary-hover": {
+      "brand-hover": {
         "$type": "color",
         "$value": "#E8549E"
       },
-      "highlight": {
+      "brand-secondary": {
         "$type": "color",
         "$value": "{palette.blue.base}"
       },
@@ -835,6 +840,11 @@
       "accent-b": {
         "$type": "color",
         "$value": "{palette.red.base}"
+      },
+      "accent-b-dark": {
+        "$type": "color",
+        "$value": "#661617",
+        "$description": "Dark red — pairs with accent-b"
       },
       "accent-c": {
         "$type": "color",
@@ -1067,15 +1077,15 @@
   "talki-oss": {
     "$description": "Talki OSS — open source screen recording and video sharing product.",
     "color": {
-      "primary": {
+      "brand": {
         "$type": "color",
         "$value": "#0E2FB4"
       },
-      "primary-hover": {
+      "brand-hover": {
         "$type": "color",
         "$value": "#0B25A0"
       },
-      "highlight": {
+      "brand-secondary": {
         "$type": "color",
         "$value": "#FF2736"
       },
@@ -1102,6 +1112,11 @@
       "accent-b": {
         "$type": "color",
         "$value": "#0E2FB4",
+        "$description": "Hippo-specific slot — stub"
+      },
+      "accent-b-dark": {
+        "$type": "color",
+        "$value": "#0B25A0",
         "$description": "Hippo-specific slot — stub"
       },
       "accent-c": {

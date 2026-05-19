@@ -14,14 +14,15 @@
   --palette-yellow-base: #ffc300;
   --palette-yellow-dark: #d9a318;
   --palette-yellow-light: #ffedb0;
-  --color-primary: #fd6fb6;
-  --color-primary-hover: #e8549e;
-  --color-highlight: #01baef;
+  --color-brand: #fd6fb6;
+  --color-brand-hover: #e8549e;
+  --color-brand-secondary: #01baef;
   --color-secondary: #01baef;
   --color-secondary-subtle: #afe4fc;
   --color-accent-a: #56b765;
   --color-accent-a-dark: #0c7b2d;
   --color-accent-b: #f84d4d;
+  --color-accent-b-dark: #661617; /** Dark red — pairs with accent-b */
   --color-accent-c: #ffc300;
   --color-accent-c-dark: #d9a318;
   --color-accent-c-light: #ffedb0;

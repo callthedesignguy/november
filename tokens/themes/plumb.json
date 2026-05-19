@@ -1,15 +1,16 @@
 {
   "$description": "Plumb — voice/comms product. Dark theme.",
   "color": {
-    "primary":          { "$type": "color", "$value": "#5C6EFF", "$description": "TODO: confirm brand primary" },
-    "primary-hover":    { "$type": "color", "$value": "#4A5CE8" },
-    "highlight":        { "$type": "color", "$value": "#10B981" },
+    "brand":            { "$type": "color", "$value": "#5C6EFF", "$description": "TODO: confirm brand primary" },
+    "brand-hover":      { "$type": "color", "$value": "#4A5CE8" },
+    "brand-secondary":  { "$type": "color", "$value": "#10B981" },
     "secondary":        { "$type": "color", "$value": "#5C6EFF", "$description": "Hippo-specific slot — stub for variable collection consistency" },
     "secondary-subtle": { "$type": "color", "$value": "rgba(92, 110, 255, 0.12)", "$description": "Hippo-specific slot — stub" },
 
     "accent-a":        { "$type": "color", "$value": "#5C6EFF", "$description": "Hippo-specific slot — stub" },
     "accent-a-dark":   { "$type": "color", "$value": "#4A5CE8", "$description": "Hippo-specific slot — stub" },
     "accent-b":        { "$type": "color", "$value": "#5C6EFF", "$description": "Hippo-specific slot — stub" },
+    "accent-b-dark":   { "$type": "color", "$value": "#4A5CE8", "$description": "Hippo-specific slot — stub" },
     "accent-c":        { "$type": "color", "$value": "#5C6EFF", "$description": "Hippo-specific slot — stub" },
     "accent-c-dark":   { "$type": "color", "$value": "#4A5CE8", "$description": "Hippo-specific slot — stub" },
     "accent-c-light":  { "$type": "color", "$value": "rgba(92, 110, 255, 0.12)", "$description": "Hippo-specific slot — stub" },

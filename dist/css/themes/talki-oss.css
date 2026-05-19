@@ -3,14 +3,15 @@
  */
 
 [data-theme="talki-oss"], .theme-talki-oss {
-  --color-primary: #0e2fb4;
-  --color-primary-hover: #0b25a0;
-  --color-highlight: #ff2736;
+  --color-brand: #0e2fb4;
+  --color-brand-hover: #0b25a0;
+  --color-brand-secondary: #ff2736;
   --color-secondary: #0e2fb4; /** Hippo-specific slot — stub for variable collection consistency */
   --color-secondary-subtle: rgba(14, 47, 180, 0.08); /** Hippo-specific slot — stub */
   --color-accent-a: #0e2fb4; /** Hippo-specific slot — stub */
   --color-accent-a-dark: #0b25a0; /** Hippo-specific slot — stub */
   --color-accent-b: #0e2fb4; /** Hippo-specific slot — stub */
+  --color-accent-b-dark: #0b25a0; /** Hippo-specific slot — stub */
   --color-accent-c: #0e2fb4; /** Hippo-specific slot — stub */
   --color-accent-c-dark: #0b25a0; /** Hippo-specific slot — stub */
   --color-accent-c-light: rgba(14, 47, 180, 0.08); /** Hippo-specific slot — stub */

@@ -26,15 +26,16 @@
   },
 
   "color": {
-    "primary":          { "$type": "color", "$value": "{palette.pink.base}" },
-    "primary-hover":    { "$type": "color", "$value": "#E8549E" },
-    "highlight":        { "$type": "color", "$value": "{palette.blue.base}" },
+    "brand":            { "$type": "color", "$value": "{palette.pink.base}" },
+    "brand-hover":      { "$type": "color", "$value": "#E8549E" },
+    "brand-secondary":  { "$type": "color", "$value": "{palette.blue.base}" },
     "secondary":        { "$type": "color", "$value": "{palette.blue.base}" },
     "secondary-subtle": { "$type": "color", "$value": "{palette.blue.light}" },
 
     "accent-a":        { "$type": "color", "$value": "{palette.green.base}" },
     "accent-a-dark":   { "$type": "color", "$value": "{palette.green.dark}" },
     "accent-b":        { "$type": "color", "$value": "{palette.red.base}" },
+    "accent-b-dark":   { "$type": "color", "$value": "#661617", "$description": "Dark red — pairs with accent-b" },
     "accent-c":        { "$type": "color", "$value": "{palette.yellow.base}" },
     "accent-c-dark":   { "$type": "color", "$value": "{palette.yellow.dark}" },
     "accent-c-light":  { "$type": "color", "$value": "{palette.yellow.light}" },

@@ -3,14 +3,15 @@
  */
 
 [data-theme="plumb"], .theme-plumb {
-  --color-primary: #5c6eff; /** TODO: confirm brand primary */
-  --color-primary-hover: #4a5ce8;
-  --color-highlight: #10b981;
+  --color-brand: #5c6eff; /** TODO: confirm brand primary */
+  --color-brand-hover: #4a5ce8;
+  --color-brand-secondary: #10b981;
   --color-secondary: #5c6eff; /** Hippo-specific slot — stub for variable collection consistency */
   --color-secondary-subtle: rgba(92, 110, 255, 0.12); /** Hippo-specific slot — stub */
   --color-accent-a: #5c6eff; /** Hippo-specific slot — stub */
   --color-accent-a-dark: #4a5ce8; /** Hippo-specific slot — stub */
   --color-accent-b: #5c6eff; /** Hippo-specific slot — stub */
+  --color-accent-b-dark: #4a5ce8; /** Hippo-specific slot — stub */
   --color-accent-c: #5c6eff; /** Hippo-specific slot — stub */
   --color-accent-c-dark: #4a5ce8; /** Hippo-specific slot — stub */
   --color-accent-c-light: rgba(92, 110, 255, 0.12); /** Hippo-specific slot — stub */

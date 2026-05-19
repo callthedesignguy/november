@@ -1,15 +1,16 @@
 {
   "$description": "Talki OSS — open source screen recording and video sharing product.",
   "color": {
-    "primary":          { "$type": "color", "$value": "#0E2FB4" },
-    "primary-hover":    { "$type": "color", "$value": "#0B25A0" },
-    "highlight":        { "$type": "color", "$value": "#FF2736" },
+    "brand":            { "$type": "color", "$value": "#0E2FB4" },
+    "brand-hover":      { "$type": "color", "$value": "#0B25A0" },
+    "brand-secondary":  { "$type": "color", "$value": "#FF2736" },
     "secondary":        { "$type": "color", "$value": "#0E2FB4", "$description": "Hippo-specific slot — stub for variable collection consistency" },
     "secondary-subtle": { "$type": "color", "$value": "rgba(14, 47, 180, 0.08)", "$description": "Hippo-specific slot — stub" },
 
     "accent-a":        { "$type": "color", "$value": "#0E2FB4", "$description": "Hippo-specific slot — stub" },
     "accent-a-dark":   { "$type": "color", "$value": "#0B25A0", "$description": "Hippo-specific slot — stub" },
     "accent-b":        { "$type": "color", "$value": "#0E2FB4", "$description": "Hippo-specific slot — stub" },
+    "accent-b-dark":   { "$type": "color", "$value": "#0B25A0", "$description": "Hippo-specific slot — stub" },
     "accent-c":        { "$type": "color", "$value": "#0E2FB4", "$description": "Hippo-specific slot — stub" },
     "accent-c-dark":   { "$type": "color", "$value": "#0B25A0", "$description": "Hippo-specific slot — stub" },
     "accent-c-light":  { "$type": "color", "$value": "rgba(14, 47, 180, 0.08)", "$description": "Hippo-specific slot — stub" },
