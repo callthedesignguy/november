@@ -1,43 +1,88 @@
 {
-  "$description": "Hippo — fill in brand colors when design is ready.",
+  "$description": "Hippo — illustrative, fun design system with a rich multi-accent palette.",
+
+  "palette": {
+    "ink":    { "$type": "color", "$value": "#27233A", "$description": "Brand near-black — base ink" },
+    "white":  { "$type": "color", "$value": "#FDF7FA", "$description": "Brand white — warm off-white base" },
+    "pink": {
+      "base":  { "$type": "color", "$value": "#FD6FB6" }
+    },
+    "blue": {
+      "base":  { "$type": "color", "$value": "#01BAEF" },
+      "light": { "$type": "color", "$value": "#AFE4FC" }
+    },
+    "green": {
+      "base":  { "$type": "color", "$value": "#56B765" },
+      "dark":  { "$type": "color", "$value": "#0C7B2D" }
+    },
+    "red": {
+      "base":  { "$type": "color", "$value": "#F84D4D", "$description": "Accent B — also status/negative" }
+    },
+    "yellow": {
+      "base":  { "$type": "color", "$value": "#FFC300" },
+      "dark":  { "$type": "color", "$value": "#D9A318" },
+      "light": { "$type": "color", "$value": "#FFEDB0" }
+    }
+  },
+
   "color": {
-    "primary":       { "$type": "color", "$value": "#7C3AED", "$description": "TODO: confirm brand primary" },
-    "primary-hover": { "$type": "color", "$value": "#6D28D9" },
-    "highlight":     { "$type": "color", "$value": "#10B981" },
+    "primary":          { "$type": "color", "$value": "{palette.pink.base}" },
+    "primary-hover":    { "$type": "color", "$value": "#E8549E" },
+    "highlight":        { "$type": "color", "$value": "{palette.blue.base}" },
+    "secondary":        { "$type": "color", "$value": "{palette.blue.base}" },
+    "secondary-subtle": { "$type": "color", "$value": "{palette.blue.light}" },
+
+    "accent-a":        { "$type": "color", "$value": "{palette.green.base}" },
+    "accent-a-dark":   { "$type": "color", "$value": "{palette.green.dark}" },
+    "accent-b":        { "$type": "color", "$value": "{palette.red.base}" },
+    "accent-c":        { "$type": "color", "$value": "{palette.yellow.base}" },
+    "accent-c-dark":   { "$type": "color", "$value": "{palette.yellow.dark}" },
+    "accent-c-light":  { "$type": "color", "$value": "{palette.yellow.light}" },
 
     "surface": {
-      "highlight":         { "$type": "color", "$value": "#FFFFFF" },
-      "primary":           { "$type": "color", "$value": "#FAFAFE" },
-      "secondary":         { "$type": "color", "$value": "#F5F3FF" },
-      "tertiary":          { "$type": "color", "$value": "#1A1625" },
-      "inverse-highlight": { "$type": "color", "$value": "#2A2635" },
-      "inverse-primary":   { "$type": "color", "$value": "#1A1625" },
-      "inverse-secondary": { "$type": "color", "$value": "#120F1C" },
-      "inverse-tertiary":  { "$type": "color", "$value": "#0A0814" }
+      "highlight":         { "$type": "color", "$value": "{palette.white}" },
+      "primary":           { "$type": "color", "$value": "#FFF8FC" },
+      "secondary":         { "$type": "color", "$value": "#FFF0F7" },
+      "tertiary":          { "$type": "color", "$value": "#FFE4F2" },
+      "inverse-highlight": { "$type": "color", "$value": "#3A2F50" },
+      "inverse-primary":   { "$type": "color", "$value": "{palette.ink}" },
+      "inverse-secondary": { "$type": "color", "$value": "#1A1728" },
+      "inverse-tertiary":  { "$type": "color", "$value": "#0F0D18" }
     },
 
     "text": {
-      "default":       { "$type": "color", "$value": "#1A1625" },
-      "light":         { "$type": "color", "$value": "#4B4869" },
-      "muted":         { "$type": "color", "$value": "#7C789A" },
-      "inverse":       { "$type": "color", "$value": "#FAFAFE" },
-      "inverse-light": { "$type": "color", "$value": "#C4C0E0" },
-      "inverse-muted": { "$type": "color", "$value": "#9A96BC" }
+      "base":                { "$type": "color", "$value": "{palette.ink}" },
+      "neutral":             { "$type": "color", "$value": "#574E6E" },
+      "placeholder":         { "$type": "color", "$value": "#8279A0" },
+      "disabled":            { "$type": "color", "$value": "#A9A2BC" },
+      "brand":               { "$type": "color", "$value": "{palette.pink.base}" },
+      "danger":              { "$type": "color", "$value": "{palette.red.base}" },
+      "warning":             { "$type": "color", "$value": "#92400E" },
+      "success":             { "$type": "color", "$value": "#065F46" },
+      "inverse-base":        { "$type": "color", "$value": "#FFFFFF" },
+      "inverse-neutral":     { "$type": "color", "$value": "#D4C8E8" },
+      "inverse-placeholder": { "$type": "color", "$value": "#A898C8" }
+    },
+
+    "border": {
+      "light":   { "$type": "color", "$value": "#FFF0F7" },
+      "default": { "$type": "color", "$value": "#FFD6EB" },
+      "strong":  { "$type": "color", "$value": "#FFB8D9" }
     },
 
     "action": {
-      "fill":              { "$type": "color", "$value": "#7C3AED" },
-      "fill-hover":        { "$type": "color", "$value": "#6D28D9" },
-      "fill-subtle":       { "$type": "color", "$value": "rgba(124, 58, 237, 0.08)" },
-      "fill-subtle-hover": { "$type": "color", "$value": "rgba(124, 58, 237, 0.16)" },
+      "fill":              { "$type": "color", "$value": "{palette.pink.base}" },
+      "fill-hover":        { "$type": "color", "$value": "#E8549E" },
+      "fill-subtle":       { "$type": "color", "$value": "rgba(253, 111, 182, 0.10)" },
+      "fill-subtle-hover": { "$type": "color", "$value": "rgba(253, 111, 182, 0.18)" },
       "on-fill":           { "$type": "color", "$value": "#FFFFFF" }
     },
 
     "status": {
       "warning":         { "$type": "color", "$value": "#D97706" },
       "warning-subtle":  { "$type": "color", "$value": "#FEF3C7" },
-      "negative":        { "$type": "color", "$value": "#DC2626" },
-      "negative-subtle": { "$type": "color", "$value": "#FEE2E2" },
+      "negative":        { "$type": "color", "$value": "{palette.red.base}" },
+      "negative-subtle": { "$type": "color", "$value": "#FFE4E4" },
       "positive":        { "$type": "color", "$value": "#10B981" },
       "positive-subtle": { "$type": "color", "$value": "#D1FAE5" }
     },
@@ -47,14 +92,21 @@
       "med":   { "$type": "color", "$value": "rgba(0, 0, 0, 0.08)" },
       "dark":  { "$type": "color", "$value": "rgba(0, 0, 0, 0.16)" }
     },
-    "scrim": { "$type": "color", "$value": "rgba(0, 0, 0, 0.4)" }
+    "scrim": { "$type": "color", "$value": "rgba(39, 35, 58, 0.5)" }
   },
+
   "font": {
     "family": {
-      "primary":   { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
-      "secondary": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
-      "accent":    { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "primary":   { "$type": "fontFamily", "$value": ["SN Pro", "system-ui", "sans-serif"] },
+      "secondary": { "$type": "fontFamily", "$value": ["SN Pro", "system-ui", "sans-serif"] },
+      "accent":    { "$type": "fontFamily", "$value": ["SN Pro", "system-ui", "sans-serif"] },
       "code":      { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
+    },
+    "weight": {
+      "regular": { "$type": "fontWeight", "$value": 400 },
+      "medium":  { "$type": "fontWeight", "$value": 500 },
+      "bold":    { "$type": "fontWeight", "$value": 700 },
+      "black":   { "$type": "fontWeight", "$value": 900, "$description": "Hippo default — SN Pro Black used across most UI" }
     }
   }
 }

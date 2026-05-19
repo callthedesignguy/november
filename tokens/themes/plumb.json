@@ -1,9 +1,18 @@
 {
   "$description": "Plumb — voice/comms product. Dark theme.",
   "color": {
-    "primary":       { "$type": "color", "$value": "#5C6EFF", "$description": "TODO: confirm brand primary" },
-    "primary-hover": { "$type": "color", "$value": "#4A5CE8" },
-    "highlight":     { "$type": "color", "$value": "#10B981" },
+    "primary":          { "$type": "color", "$value": "#5C6EFF", "$description": "TODO: confirm brand primary" },
+    "primary-hover":    { "$type": "color", "$value": "#4A5CE8" },
+    "highlight":        { "$type": "color", "$value": "#10B981" },
+    "secondary":        { "$type": "color", "$value": "#5C6EFF", "$description": "Hippo-specific slot — stub for variable collection consistency" },
+    "secondary-subtle": { "$type": "color", "$value": "rgba(92, 110, 255, 0.12)", "$description": "Hippo-specific slot — stub" },
+
+    "accent-a":        { "$type": "color", "$value": "#5C6EFF", "$description": "Hippo-specific slot — stub" },
+    "accent-a-dark":   { "$type": "color", "$value": "#4A5CE8", "$description": "Hippo-specific slot — stub" },
+    "accent-b":        { "$type": "color", "$value": "#5C6EFF", "$description": "Hippo-specific slot — stub" },
+    "accent-c":        { "$type": "color", "$value": "#5C6EFF", "$description": "Hippo-specific slot — stub" },
+    "accent-c-dark":   { "$type": "color", "$value": "#4A5CE8", "$description": "Hippo-specific slot — stub" },
+    "accent-c-light":  { "$type": "color", "$value": "rgba(92, 110, 255, 0.12)", "$description": "Hippo-specific slot — stub" },
 
     "surface": {
       "highlight":         { "$type": "color", "$value": "#1A1A28" },
@@ -17,12 +26,23 @@
     },
 
     "text": {
-      "default":       { "$type": "color", "$value": "#F0F0FF" },
-      "light":         { "$type": "color", "$value": "#B0B4CC" },
-      "muted":         { "$type": "color", "$value": "#6E7299" },
-      "inverse":       { "$type": "color", "$value": "#0F0F1A" },
-      "inverse-light": { "$type": "color", "$value": "#2A2A3E" },
-      "inverse-muted": { "$type": "color", "$value": "#4A4A6A" }
+      "base":                { "$type": "color", "$value": "#F0F0FF" },
+      "neutral":             { "$type": "color", "$value": "#B0B4CC" },
+      "placeholder":         { "$type": "color", "$value": "#6E7299" },
+      "disabled":            { "$type": "color", "$value": "rgba(255, 255, 255, 0.30)" },
+      "brand":               { "$type": "color", "$value": "#5C6EFF" },
+      "danger":              { "$type": "color", "$value": "#FC8181" },
+      "warning":             { "$type": "color", "$value": "#F6AD55" },
+      "success":             { "$type": "color", "$value": "#68D391" },
+      "inverse-base":        { "$type": "color", "$value": "#0F0F1A" },
+      "inverse-neutral":     { "$type": "color", "$value": "#2A2A3E" },
+      "inverse-placeholder": { "$type": "color", "$value": "#4A4A6A" }
+    },
+
+    "border": {
+      "light":   { "$type": "color", "$value": "rgba(255, 255, 255, 0.05)" },
+      "default": { "$type": "color", "$value": "rgba(255, 255, 255, 0.10)" },
+      "strong":  { "$type": "color", "$value": "rgba(255, 255, 255, 0.20)" }
     },
 
     "action": {
@@ -55,6 +75,11 @@
       "secondary": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
       "accent":    { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
       "code":      { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
+    },
+    "weight": {
+      "regular": { "$type": "fontWeight", "$value": 400 },
+      "medium":  { "$type": "fontWeight", "$value": 500 },
+      "bold":    { "$type": "fontWeight", "$value": 700 }
     }
   }
 }

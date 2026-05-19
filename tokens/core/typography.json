@@ -1,50 +1,50 @@
 {
   "font": {
     "family": {
-      "primary":   { "$type": "fontFamily", "$value": ["Geist", "system-ui", "-apple-system", "sans-serif"], "$description": "Heading/display font — override per theme mode" },
-      "secondary": { "$type": "fontFamily", "$value": ["Geist", "system-ui", "-apple-system", "sans-serif"], "$description": "Body/copy font — override per theme mode" },
+      "primary":   { "$type": "fontFamily", "$value": ["Geist", "system-ui", "-apple-system", "sans-serif"], "$description": "Heading/display font — override per theme" },
+      "secondary": { "$type": "fontFamily", "$value": ["Geist", "system-ui", "-apple-system", "sans-serif"], "$description": "Body/copy font — override per theme" },
       "accent":    { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"],                  "$description": "Reserved for editorial or one-off components" },
       "code":      { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"],                       "$description": "Monospace — not brand-driven" }
     },
-    "weight": {
-      "regular":  { "$type": "fontWeight", "$value": 400 },
-      "medium":   { "$type": "fontWeight", "$value": 500 },
-      "semibold": { "$type": "fontWeight", "$value": 600 },
-      "bold":     { "$type": "fontWeight", "$value": 700 }
-    },
-    "size": {
-      "fine":    { "$type": "dimension", "$value": "11px" },
-      "caption": { "$type": "dimension", "$value": "12px" },
-      "xs":      { "$type": "dimension", "$value": "13px" },
-      "sm":      { "$type": "dimension", "$value": "14px" },
-      "base":    { "$type": "dimension", "$value": "15px" },
-      "lg":      { "$type": "dimension", "$value": "16px" },
-      "xl":      { "$type": "dimension", "$value": "18px" }
-    },
-    "size-fluid": {
-      "heading-xs":  { "$type": "string", "$value": "clamp(0.75rem, 0.75rem + (100vw - 20rem) * 0.0052, 0.875rem)" },
-      "heading-sm":  { "$type": "string", "$value": "clamp(0.875rem, 0.875rem + (100vw - 20rem) * 0.0104, 1.125rem)" },
-      "heading-base":{ "$type": "string", "$value": "clamp(1rem, 1rem + (100vw - 20rem) * 0.0156, 1.375rem)" },
-      "heading-md":  { "$type": "string", "$value": "clamp(1.125rem, 1.125rem + (100vw - 20rem) * 0.0208, 1.625rem)" },
-      "heading-lg":  { "$type": "string", "$value": "clamp(1.25rem, 1.25rem + (100vw - 20rem) * 0.026, 1.875rem)" },
-      "heading-xl":  { "$type": "string", "$value": "clamp(1.375rem, 1.375rem + (100vw - 20rem) * 0.0312, 2.125rem)" },
-      "heading-2xl": { "$type": "string", "$value": "clamp(1.75rem, 1.75rem + (100vw - 20rem) * 0.0469, 2.75rem)" },
-      "heading-3xl": { "$type": "string", "$value": "clamp(2rem, 2rem + (100vw - 20rem) * 0.0625, 3.5rem)" },
-      "heading-4xl": { "$type": "string", "$value": "clamp(2.25rem, 2.25rem + (100vw - 20rem) * 0.0781, 4.25rem)" },
-      "heading-5xl": { "$type": "string", "$value": "clamp(2.75rem, 2.75rem + (100vw - 20rem) * 0.1042, 5.25rem)" },
-      "heading-6xl": { "$type": "string", "$value": "clamp(3.25rem, 3.25rem + (100vw - 20rem) * 0.1302, 6.25rem)" },
-      "heading-7xl": { "$type": "string", "$value": "clamp(3.75rem, 3.75rem + (100vw - 20rem) * 0.1562, 7.25rem)" },
-      "display":     { "$type": "string", "$value": "clamp(3.5rem, 3.5rem + (100vw - 20rem) * 0.1823, 8.5rem)" }
-    },
     "leading": {
-      "none":    { "$type": "number", "$value": 1 },
-      "tight":   { "$type": "number", "$value": 1.2 },
-      "normal":  { "$type": "number", "$value": 1.5 },
+      "none":    { "$type": "number", "$value": 1.0,   "$description": "Display" },
+      "tighter": { "$type": "number", "$value": 1.1,   "$description": "Heading/xl–7xl" },
+      "tight":   { "$type": "number", "$value": 1.2,   "$description": "Heading/xxs–lg, Body/accent" },
+      "normal":  { "$type": "number", "$value": 1.5,   "$description": "Body/xs, Body/sm, Code/base" },
       "relaxed": { "$type": "number", "$value": 1.625 },
-      "loose":   { "$type": "number", "$value": 1.8 }
+      "loose":   { "$type": "number", "$value": 1.8,   "$description": "Body/base, Body/lg, Body/xl" }
     },
     "tracking": {
-      "heading": { "$type": "string", "$value": "-0.04em" }
+      "heading": { "$type": "string", "$value": "-0.04em", "$description": "All heading and display styles" }
+    }
+  },
+  "text": {
+    "body": {
+      "accent":  { "$type": "dimension", "$value": "8px",  "$description": "Body/accent" },
+      "xs":      { "$type": "dimension", "$value": "10px", "$description": "Body/xs" },
+      "fine":    { "$type": "dimension", "$value": "11px", "$description": "Body/fine" },
+      "caption": { "$type": "dimension", "$value": "12px", "$description": "Body/caption, Body/sm" },
+      "base":    { "$type": "dimension", "$value": "16px", "$description": "Body/base" },
+      "lg":      { "$type": "dimension", "$value": "20px", "$description": "Body/lg" },
+      "xl":      { "$type": "dimension", "$value": "24px", "$description": "Body/xl" }
+    },
+    "heading": {
+      "xxs":     { "$type": "dimension", "$value": "12px",  "$description": "Heading/xxs" },
+      "xs":      { "$type": "dimension", "$value": "14px",  "$description": "Heading/xs" },
+      "sm":      { "$type": "dimension", "$value": "16px",  "$description": "Heading/sm" },
+      "md":      { "$type": "dimension", "$value": "18px",  "$description": "Heading/md" },
+      "lg":      { "$type": "dimension", "$value": "20px",  "$description": "Heading/lg" },
+      "xl":      { "$type": "dimension", "$value": "24px",  "$description": "Heading/xl" },
+      "2xl":     { "$type": "dimension", "$value": "32px",  "$description": "Heading/2xl" },
+      "3xl":     { "$type": "dimension", "$value": "48px",  "$description": "Heading/3xl" },
+      "4xl":     { "$type": "dimension", "$value": "64px",  "$description": "Heading/4xl" },
+      "5xl":     { "$type": "dimension", "$value": "80px",  "$description": "Heading/5xl" },
+      "6xl":     { "$type": "dimension", "$value": "96px",  "$description": "Heading/6xl" },
+      "7xl":     { "$type": "dimension", "$value": "120px", "$description": "Heading/7xl" },
+      "display": { "$type": "dimension", "$value": "200px", "$description": "Display" }
+    },
+    "code": {
+      "base": { "$type": "dimension", "$value": "13px", "$description": "Code/base" }
     }
   }
 }

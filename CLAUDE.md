@@ -92,7 +92,7 @@ Source of truth: `callthedesignguy-website/src/app/globals.css`. Figma uses desk
 
 | Style | Size | Line Height | CSS token |
 |---|---|---|---|
-| Code/base | 13px | 150% (normal) | `--font-accent` |
+| Code/base | 13px | 150% (normal) | `--text-code-base` |
 
 **Heading** — bound to `family/primary`
 
@@ -146,7 +146,7 @@ Source of truth: `callthedesignguy-website/src/app/globals.css`. Single-mode for
 
 ## What's Next
 
-1. **Sync code tokens** — update `tokens/core/typography.json` font family names (sans/mono → primary/secondary/accent/code), surface token names, add action + status groups, and add `--shadow-md` to `globals.css`.
-2. **Lock in brand fonts** — update `family/primary` and `family/secondary` per mode when brand fonts are decided.
-3. **Fine-tune Talki-OSS warning color** — status/warning is amber #D97706 which clashes with Talki-OSS brand primary. Adjust when building status UI in Talki.
-4. **Token documentation page** — populate the existing section frames with visual swatches for print review.
+1. **Lock in brand fonts** — update `family/primary` and `family/secondary` per mode when brand fonts are decided.
+2. **Fine-tune Talki-OSS warning color** — status/warning is amber #D97706 which clashes with Talki-OSS brand primary. Adjust when building status UI in Talki.
+3. **Token documentation page** — populate the existing section frames with visual swatches for print review.
+4. **Verify Vercel deployment** — talki-oss uses `link:../november` which requires november to exist as a sibling directory during `yarn install`. Confirm Vercel build pipeline clones november before installing, or add an `installCommand` to `vercel.json`.

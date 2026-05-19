@@ -48,38 +48,36 @@
   --space-32: 128px;
   --space-36: 144px;
   --space-40: 160px;
-  --font-family-primary: Geist, system-ui, -apple-system, sans-serif; /** Heading/display font — override per theme mode */
-  --font-family-secondary: Geist, system-ui, -apple-system, sans-serif; /** Body/copy font — override per theme mode */
+  --font-family-primary: Geist, system-ui, -apple-system, sans-serif; /** Heading/display font — override per theme */
+  --font-family-secondary: Geist, system-ui, -apple-system, sans-serif; /** Body/copy font — override per theme */
   --font-family-accent: Inter, system-ui, sans-serif; /** Reserved for editorial or one-off components */
   --font-family-code: 'JetBrains Mono', monospace; /** Monospace — not brand-driven */
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-size-fine: 11px;
-  --font-size-caption: 12px;
-  --font-size-xs: 13px;
-  --font-size-sm: 14px;
-  --font-size-base: 15px;
-  --font-size-lg: 16px;
-  --font-size-xl: 18px;
-  --font-size-fluid-heading-xs: clamp(0.75rem, 0.75rem + (100vw - 20rem) * 0.0052, 0.875rem);
-  --font-size-fluid-heading-sm: clamp(0.875rem, 0.875rem + (100vw - 20rem) * 0.0104, 1.125rem);
-  --font-size-fluid-heading-base: clamp(1rem, 1rem + (100vw - 20rem) * 0.0156, 1.375rem);
-  --font-size-fluid-heading-md: clamp(1.125rem, 1.125rem + (100vw - 20rem) * 0.0208, 1.625rem);
-  --font-size-fluid-heading-lg: clamp(1.25rem, 1.25rem + (100vw - 20rem) * 0.026, 1.875rem);
-  --font-size-fluid-heading-xl: clamp(1.375rem, 1.375rem + (100vw - 20rem) * 0.0312, 2.125rem);
-  --font-size-fluid-heading-2xl: clamp(1.75rem, 1.75rem + (100vw - 20rem) * 0.0469, 2.75rem);
-  --font-size-fluid-heading-3xl: clamp(2rem, 2rem + (100vw - 20rem) * 0.0625, 3.5rem);
-  --font-size-fluid-heading-4xl: clamp(2.25rem, 2.25rem + (100vw - 20rem) * 0.0781, 4.25rem);
-  --font-size-fluid-heading-5xl: clamp(2.75rem, 2.75rem + (100vw - 20rem) * 0.1042, 5.25rem);
-  --font-size-fluid-heading-6xl: clamp(3.25rem, 3.25rem + (100vw - 20rem) * 0.1302, 6.25rem);
-  --font-size-fluid-heading-7xl: clamp(3.75rem, 3.75rem + (100vw - 20rem) * 0.1562, 7.25rem);
-  --font-size-fluid-display: clamp(3.5rem, 3.5rem + (100vw - 20rem) * 0.1823, 8.5rem);
-  --font-leading-none: 1;
-  --font-leading-tight: 1.2;
-  --font-leading-normal: 1.5;
+  --font-leading-none: 1; /** Display */
+  --font-leading-tighter: 1.1; /** Heading/xl–7xl */
+  --font-leading-tight: 1.2; /** Heading/xxs–lg, Body/accent */
+  --font-leading-normal: 1.5; /** Body/xs, Body/sm, Code/base */
   --font-leading-relaxed: 1.625;
-  --font-leading-loose: 1.8;
-  --font-tracking-heading: -0.04em;
+  --font-leading-loose: 1.8; /** Body/base, Body/lg, Body/xl */
+  --font-tracking-heading: -0.04em; /** All heading and display styles */
+  --text-body-accent: 8px; /** Body/accent */
+  --text-body-xs: 10px; /** Body/xs */
+  --text-body-fine: 11px; /** Body/fine */
+  --text-body-caption: 12px; /** Body/caption, Body/sm */
+  --text-body-base: 16px; /** Body/base */
+  --text-body-lg: 20px; /** Body/lg */
+  --text-body-xl: 24px; /** Body/xl */
+  --text-heading-xxs: 12px; /** Heading/xxs */
+  --text-heading-xs: 14px; /** Heading/xs */
+  --text-heading-sm: 16px; /** Heading/sm */
+  --text-heading-md: 18px; /** Heading/md */
+  --text-heading-lg: 20px; /** Heading/lg */
+  --text-heading-xl: 24px; /** Heading/xl */
+  --text-heading-2xl: 32px; /** Heading/2xl */
+  --text-heading-3xl: 48px; /** Heading/3xl */
+  --text-heading-4xl: 64px; /** Heading/4xl */
+  --text-heading-5xl: 80px; /** Heading/5xl */
+  --text-heading-6xl: 96px; /** Heading/6xl */
+  --text-heading-7xl: 120px; /** Heading/7xl */
+  --text-heading-display: 200px; /** Display */
+  --text-code-base: 13px; /** Code/base */
 }

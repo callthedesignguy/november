@@ -3,40 +3,71 @@
  */
 
 [data-theme="hippo"], .theme-hippo {
-  --color-primary: #7c3aed; /** TODO: confirm brand primary */
-  --color-primary-hover: #6d28d9;
-  --color-highlight: #10b981;
-  --color-surface-highlight: #ffffff;
-  --color-surface-primary: #fafafe;
-  --color-surface-secondary: #f5f3ff;
-  --color-surface-tertiary: #1a1625;
-  --color-surface-inverse-highlight: #2a2635;
-  --color-surface-inverse-primary: #1a1625;
-  --color-surface-inverse-secondary: #120f1c;
-  --color-surface-inverse-tertiary: #0a0814;
-  --color-text-default: #1a1625;
-  --color-text-light: #4b4869;
-  --color-text-muted: #7c789a;
-  --color-text-inverse: #fafafe;
-  --color-text-inverse-light: #c4c0e0;
-  --color-text-inverse-muted: #9a96bc;
-  --color-action-fill: #7c3aed;
-  --color-action-fill-hover: #6d28d9;
-  --color-action-fill-subtle: rgba(124, 58, 237, 0.08);
-  --color-action-fill-subtle-hover: rgba(124, 58, 237, 0.16);
+  --palette-ink: #27233a; /** Brand near-black — base ink */
+  --palette-white: #fdf7fa; /** Brand white — warm off-white base */
+  --palette-pink-base: #fd6fb6;
+  --palette-blue-base: #01baef;
+  --palette-blue-light: #afe4fc;
+  --palette-green-base: #56b765;
+  --palette-green-dark: #0c7b2d;
+  --palette-red-base: #f84d4d; /** Accent B — also status/negative */
+  --palette-yellow-base: #ffc300;
+  --palette-yellow-dark: #d9a318;
+  --palette-yellow-light: #ffedb0;
+  --color-primary: #fd6fb6;
+  --color-primary-hover: #e8549e;
+  --color-highlight: #01baef;
+  --color-secondary: #01baef;
+  --color-secondary-subtle: #afe4fc;
+  --color-accent-a: #56b765;
+  --color-accent-a-dark: #0c7b2d;
+  --color-accent-b: #f84d4d;
+  --color-accent-c: #ffc300;
+  --color-accent-c-dark: #d9a318;
+  --color-accent-c-light: #ffedb0;
+  --color-surface-highlight: #fdf7fa;
+  --color-surface-primary: #fff8fc;
+  --color-surface-secondary: #fff0f7;
+  --color-surface-tertiary: #ffe4f2;
+  --color-surface-inverse-highlight: #3a2f50;
+  --color-surface-inverse-primary: #27233a;
+  --color-surface-inverse-secondary: #1a1728;
+  --color-surface-inverse-tertiary: #0f0d18;
+  --color-text-base: #27233a;
+  --color-text-neutral: #574e6e;
+  --color-text-placeholder: #8279a0;
+  --color-text-disabled: #a9a2bc;
+  --color-text-brand: #fd6fb6;
+  --color-text-danger: #f84d4d;
+  --color-text-warning: #92400e;
+  --color-text-success: #065f46;
+  --color-text-inverse-base: #ffffff;
+  --color-text-inverse-neutral: #d4c8e8;
+  --color-text-inverse-placeholder: #a898c8;
+  --color-border-light: #fff0f7;
+  --color-border-default: #ffd6eb;
+  --color-border-strong: #ffb8d9;
+  --color-action-fill: #fd6fb6;
+  --color-action-fill-hover: #e8549e;
+  --color-action-fill-subtle: rgba(253, 111, 182, 0.1);
+  --color-action-fill-subtle-hover: rgba(253, 111, 182, 0.18);
   --color-action-on-fill: #ffffff;
   --color-status-warning: #d97706;
   --color-status-warning-subtle: #fef3c7;
-  --color-status-negative: #dc2626;
-  --color-status-negative-subtle: #fee2e2;
+  --color-status-negative: #f84d4d;
+  --color-status-negative-subtle: #ffe4e4;
   --color-status-positive: #10b981;
   --color-status-positive-subtle: #d1fae5;
   --color-overlay-light: rgba(0, 0, 0, 0.04);
   --color-overlay-med: rgba(0, 0, 0, 0.08);
   --color-overlay-dark: rgba(0, 0, 0, 0.16);
-  --color-scrim: rgba(0, 0, 0, 0.4);
-  --font-family-primary: Inter, system-ui, sans-serif;
-  --font-family-secondary: Inter, system-ui, sans-serif;
-  --font-family-accent: Inter, system-ui, sans-serif;
+  --color-scrim: rgba(39, 35, 58, 0.5);
+  --font-family-primary: 'SN Pro', system-ui, sans-serif;
+  --font-family-secondary: 'SN Pro', system-ui, sans-serif;
+  --font-family-accent: 'SN Pro', system-ui, sans-serif;
   --font-family-code: 'JetBrains Mono', monospace;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900; /** Hippo default — SN Pro Black used across most UI */
 }

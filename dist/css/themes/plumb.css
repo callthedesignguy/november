@@ -6,6 +6,14 @@
   --color-primary: #5c6eff; /** TODO: confirm brand primary */
   --color-primary-hover: #4a5ce8;
   --color-highlight: #10b981;
+  --color-secondary: #5c6eff; /** Hippo-specific slot — stub for variable collection consistency */
+  --color-secondary-subtle: rgba(92, 110, 255, 0.12); /** Hippo-specific slot — stub */
+  --color-accent-a: #5c6eff; /** Hippo-specific slot — stub */
+  --color-accent-a-dark: #4a5ce8; /** Hippo-specific slot — stub */
+  --color-accent-b: #5c6eff; /** Hippo-specific slot — stub */
+  --color-accent-c: #5c6eff; /** Hippo-specific slot — stub */
+  --color-accent-c-dark: #4a5ce8; /** Hippo-specific slot — stub */
+  --color-accent-c-light: rgba(92, 110, 255, 0.12); /** Hippo-specific slot — stub */
   --color-surface-highlight: #1a1a28;
   --color-surface-primary: #16161f;
   --color-surface-secondary: #1e1e2e;
@@ -14,12 +22,20 @@
   --color-surface-inverse-primary: #f4f4ff;
   --color-surface-inverse-secondary: #e8e8f5;
   --color-surface-inverse-tertiary: #d0d0e0;
-  --color-text-default: #f0f0ff;
-  --color-text-light: #b0b4cc;
-  --color-text-muted: #6e7299;
-  --color-text-inverse: #0f0f1a;
-  --color-text-inverse-light: #2a2a3e;
-  --color-text-inverse-muted: #4a4a6a;
+  --color-text-base: #f0f0ff;
+  --color-text-neutral: #b0b4cc;
+  --color-text-placeholder: #6e7299;
+  --color-text-disabled: rgba(255, 255, 255, 0.3);
+  --color-text-brand: #5c6eff;
+  --color-text-danger: #fc8181;
+  --color-text-warning: #f6ad55;
+  --color-text-success: #68d391;
+  --color-text-inverse-base: #0f0f1a;
+  --color-text-inverse-neutral: #2a2a3e;
+  --color-text-inverse-placeholder: #4a4a6a;
+  --color-border-light: rgba(255, 255, 255, 0.05);
+  --color-border-default: rgba(255, 255, 255, 0.1);
+  --color-border-strong: rgba(255, 255, 255, 0.2);
   --color-action-fill: #5c6eff;
   --color-action-fill-hover: #4a5ce8;
   --color-action-fill-subtle: rgba(92, 110, 255, 0.12);
@@ -39,4 +55,7 @@
   --font-family-secondary: Inter, system-ui, sans-serif;
   --font-family-accent: Inter, system-ui, sans-serif;
   --font-family-code: 'JetBrains Mono', monospace;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }

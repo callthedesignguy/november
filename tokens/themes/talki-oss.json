@@ -1,28 +1,48 @@
 {
   "$description": "Talki OSS — open source screen recording and video sharing product.",
   "color": {
-    "primary":       { "$type": "color", "$value": "#0E2FB4" },
-    "primary-hover": { "$type": "color", "$value": "#0B25A0" },
-    "highlight":     { "$type": "color", "$value": "#FF2736" },
+    "primary":          { "$type": "color", "$value": "#0E2FB4" },
+    "primary-hover":    { "$type": "color", "$value": "#0B25A0" },
+    "highlight":        { "$type": "color", "$value": "#FF2736" },
+    "secondary":        { "$type": "color", "$value": "#0E2FB4", "$description": "Hippo-specific slot — stub for variable collection consistency" },
+    "secondary-subtle": { "$type": "color", "$value": "rgba(14, 47, 180, 0.08)", "$description": "Hippo-specific slot — stub" },
+
+    "accent-a":        { "$type": "color", "$value": "#0E2FB4", "$description": "Hippo-specific slot — stub" },
+    "accent-a-dark":   { "$type": "color", "$value": "#0B25A0", "$description": "Hippo-specific slot — stub" },
+    "accent-b":        { "$type": "color", "$value": "#0E2FB4", "$description": "Hippo-specific slot — stub" },
+    "accent-c":        { "$type": "color", "$value": "#0E2FB4", "$description": "Hippo-specific slot — stub" },
+    "accent-c-dark":   { "$type": "color", "$value": "#0B25A0", "$description": "Hippo-specific slot — stub" },
+    "accent-c-light":  { "$type": "color", "$value": "rgba(14, 47, 180, 0.08)", "$description": "Hippo-specific slot — stub" },
 
     "surface": {
-      "highlight":        { "$type": "color", "$value": "#FFFFFF" },
-      "primary":          { "$type": "color", "$value": "#F9FAFE" },
-      "secondary":        { "$type": "color", "$value": "#F0F2FC" },
-      "tertiary":         { "$type": "color", "$value": "#E2E6F4" },
-      "inverse-highlight":{ "$type": "color", "$value": "#2A3A7A" },
-      "inverse-primary":  { "$type": "color", "$value": "#1C2B6A" },
-      "inverse-secondary":{ "$type": "color", "$value": "#0F1D55" },
-      "inverse-tertiary": { "$type": "color", "$value": "#081040" }
+      "highlight":         { "$type": "color", "$value": "#FFFFFF" },
+      "primary":           { "$type": "color", "$value": "#F9FAFE" },
+      "secondary":         { "$type": "color", "$value": "#F0F2FC" },
+      "tertiary":          { "$type": "color", "$value": "#E2E6F4" },
+      "inverse-highlight": { "$type": "color", "$value": "#2A3A7A" },
+      "inverse-primary":   { "$type": "color", "$value": "#1C2B6A" },
+      "inverse-secondary": { "$type": "color", "$value": "#0F1D55" },
+      "inverse-tertiary":  { "$type": "color", "$value": "#081040" }
     },
 
     "text": {
-      "default":       { "$type": "color", "$value": "#111827" },
-      "light":         { "$type": "color", "$value": "#4B5563" },
-      "muted":         { "$type": "color", "$value": "#9CA3AF" },
-      "inverse":       { "$type": "color", "$value": "#FFFFFF" },
-      "inverse-light": { "$type": "color", "$value": "#C7D2FE" },
-      "inverse-muted": { "$type": "color", "$value": "#A5B4FC" }
+      "base":                { "$type": "color", "$value": "#111827" },
+      "neutral":             { "$type": "color", "$value": "#4B5563" },
+      "placeholder":         { "$type": "color", "$value": "#9CA3AF" },
+      "disabled":            { "$type": "color", "$value": "#9EA5BF" },
+      "brand":               { "$type": "color", "$value": "#0E2FB4" },
+      "danger":              { "$type": "color", "$value": "#B91C1C" },
+      "warning":             { "$type": "color", "$value": "#92400E" },
+      "success":             { "$type": "color", "$value": "#065F46" },
+      "inverse-base":        { "$type": "color", "$value": "#FFFFFF" },
+      "inverse-neutral":     { "$type": "color", "$value": "#C7D2FE" },
+      "inverse-placeholder": { "$type": "color", "$value": "#A5B4FC" }
+    },
+
+    "border": {
+      "light":   { "$type": "color", "$value": "#F7F8FD" },
+      "default": { "$type": "color", "$value": "#F0F2FC" },
+      "strong":  { "$type": "color", "$value": "#E2E6F5" }
     },
 
     "action": {
@@ -55,6 +75,11 @@
       "secondary": { "$type": "fontFamily", "$value": ["Zalando Sans", "system-ui", "sans-serif"] },
       "accent":    { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
       "code":      { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
+    },
+    "weight": {
+      "regular": { "$type": "fontWeight", "$value": 400 },
+      "medium":  { "$type": "fontWeight", "$value": 500 },
+      "bold":    { "$type": "fontWeight", "$value": 600, "$description": "Talki uses semi-bold (600) as its bold weight" }
     }
   }
 }

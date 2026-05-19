@@ -6,6 +6,14 @@
   --color-primary: #0e2fb4;
   --color-primary-hover: #0b25a0;
   --color-highlight: #ff2736;
+  --color-secondary: #0e2fb4; /** Hippo-specific slot — stub for variable collection consistency */
+  --color-secondary-subtle: rgba(14, 47, 180, 0.08); /** Hippo-specific slot — stub */
+  --color-accent-a: #0e2fb4; /** Hippo-specific slot — stub */
+  --color-accent-a-dark: #0b25a0; /** Hippo-specific slot — stub */
+  --color-accent-b: #0e2fb4; /** Hippo-specific slot — stub */
+  --color-accent-c: #0e2fb4; /** Hippo-specific slot — stub */
+  --color-accent-c-dark: #0b25a0; /** Hippo-specific slot — stub */
+  --color-accent-c-light: rgba(14, 47, 180, 0.08); /** Hippo-specific slot — stub */
   --color-surface-highlight: #ffffff;
   --color-surface-primary: #f9fafe;
   --color-surface-secondary: #f0f2fc;
@@ -14,12 +22,20 @@
   --color-surface-inverse-primary: #1c2b6a;
   --color-surface-inverse-secondary: #0f1d55;
   --color-surface-inverse-tertiary: #081040;
-  --color-text-default: #111827;
-  --color-text-light: #4b5563;
-  --color-text-muted: #9ca3af;
-  --color-text-inverse: #ffffff;
-  --color-text-inverse-light: #c7d2fe;
-  --color-text-inverse-muted: #a5b4fc;
+  --color-text-base: #111827;
+  --color-text-neutral: #4b5563;
+  --color-text-placeholder: #9ca3af;
+  --color-text-disabled: #9ea5bf;
+  --color-text-brand: #0e2fb4;
+  --color-text-danger: #b91c1c;
+  --color-text-warning: #92400e;
+  --color-text-success: #065f46;
+  --color-text-inverse-base: #ffffff;
+  --color-text-inverse-neutral: #c7d2fe;
+  --color-text-inverse-placeholder: #a5b4fc;
+  --color-border-light: #f7f8fd;
+  --color-border-default: #f0f2fc;
+  --color-border-strong: #e2e6f5;
   --color-action-fill: #0e2fb4;
   --color-action-fill-hover: #0b25a0;
   --color-action-fill-subtle: rgba(14, 47, 180, 0.08);
@@ -39,4 +55,7 @@
   --font-family-secondary: 'Zalando Sans', system-ui, sans-serif;
   --font-family-accent: Inter, system-ui, sans-serif;
   --font-family-code: 'JetBrains Mono', monospace;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600; /** Talki uses semi-bold (600) as its bold weight */
 }
