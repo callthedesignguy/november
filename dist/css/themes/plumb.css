@@ -28,9 +28,9 @@
   --color-text-placeholder: #6e7299;
   --color-text-disabled: rgba(255, 255, 255, 0.3);
   --color-text-brand: #5c6eff;
-  --color-text-danger: #fc8181;
-  --color-text-warning: #f6ad55;
-  --color-text-success: #68d391;
+  --color-text-danger: #bb2626;
+  --color-text-warning: #994c06;
+  --color-text-success: #076a51;
   --color-text-inverse-base: #0f0f1a;
   --color-text-inverse-neutral: #2a2a3e;
   --color-text-inverse-placeholder: #4a4a6a;
@@ -52,9 +52,9 @@
   --color-overlay-med: rgba(255, 255, 255, 0.08);
   --color-overlay-dark: rgba(255, 255, 255, 0.16);
   --color-scrim: rgba(0, 0, 0, 0.6);
-  --font-family-primary: Inter, system-ui, sans-serif;
-  --font-family-secondary: Inter, system-ui, sans-serif;
-  --font-family-accent: Inter, system-ui, sans-serif;
+  --font-family-primary: Geist, system-ui, sans-serif;
+  --font-family-secondary: Geist, system-ui, sans-serif;
+  --font-family-accent: Geist, system-ui, sans-serif;
   --font-family-code: 'JetBrains Mono', monospace;
   --font-weight-regular: 400;
   --font-weight-medium: 500;

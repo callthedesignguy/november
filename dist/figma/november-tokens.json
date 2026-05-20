@@ -593,15 +593,15 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "#FC8181"
+          "$value": "#BB2626"
         },
         "warning": {
           "$type": "color",
-          "$value": "#F6AD55"
+          "$value": "#994C06"
         },
         "success": {
           "$type": "color",
-          "$value": "#68D391"
+          "$value": "#076A51"
         },
         "inverse-base": {
           "$type": "color",
@@ -702,7 +702,7 @@
         "primary": {
           "$type": "fontFamily",
           "$value": [
-            "Inter",
+            "Geist",
             "system-ui",
             "sans-serif"
           ]
@@ -710,7 +710,7 @@
         "secondary": {
           "$type": "fontFamily",
           "$value": [
-            "Inter",
+            "Geist",
             "system-ui",
             "sans-serif"
           ]
@@ -718,7 +718,7 @@
         "accent": {
           "$type": "fontFamily",
           "$value": [
-            "Inter",
+            "Geist",
             "system-ui",
             "sans-serif"
           ]
@@ -1137,7 +1137,7 @@
       "surface": {
         "highlight": {
           "$type": "color",
-          "$value": "#FFFFFF"
+          "$value": "#FEFEFE"
         },
         "primary": {
           "$type": "color",
@@ -1191,15 +1191,15 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "#B91C1C"
+          "$value": "#BB2626"
         },
         "warning": {
           "$type": "color",
-          "$value": "#92400E"
+          "$value": "#994C06"
         },
         "success": {
           "$type": "color",
-          "$value": "#065F46"
+          "$value": "#076A51"
         },
         "inverse-base": {
           "$type": "color",
@@ -1225,7 +1225,7 @@
         },
         "strong": {
           "$type": "color",
-          "$value": "#E2E6F5"
+          "$value": "#E2E6F4"
         }
       },
       "action": {
@@ -1308,7 +1308,7 @@
         "secondary": {
           "$type": "fontFamily",
           "$value": [
-            "Zalando Sans",
+            "Stack Sans Text",
             "system-ui",
             "sans-serif"
           ]
@@ -1316,7 +1316,7 @@
         "accent": {
           "$type": "fontFamily",
           "$value": [
-            "Inter",
+            "Stack Sans Notch",
             "system-ui",
             "sans-serif"
           ]

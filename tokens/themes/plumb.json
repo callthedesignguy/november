@@ -32,9 +32,9 @@
       "placeholder":         { "$type": "color", "$value": "#6E7299" },
       "disabled":            { "$type": "color", "$value": "rgba(255, 255, 255, 0.30)" },
       "brand":               { "$type": "color", "$value": "#5C6EFF" },
-      "danger":              { "$type": "color", "$value": "#FC8181" },
-      "warning":             { "$type": "color", "$value": "#F6AD55" },
-      "success":             { "$type": "color", "$value": "#68D391" },
+      "danger":              { "$type": "color", "$value": "#BB2626" },
+      "warning":             { "$type": "color", "$value": "#994C06" },
+      "success":             { "$type": "color", "$value": "#076A51" },
       "inverse-base":        { "$type": "color", "$value": "#0F0F1A" },
       "inverse-neutral":     { "$type": "color", "$value": "#2A2A3E" },
       "inverse-placeholder": { "$type": "color", "$value": "#4A4A6A" }
@@ -72,9 +72,9 @@
   },
   "font": {
     "family": {
-      "primary":   { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
-      "secondary": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
-      "accent":    { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] },
+      "primary":   { "$type": "fontFamily", "$value": ["Geist", "system-ui", "sans-serif"] },
+      "secondary": { "$type": "fontFamily", "$value": ["Geist", "system-ui", "sans-serif"] },
+      "accent":    { "$type": "fontFamily", "$value": ["Geist", "system-ui", "sans-serif"] },
       "code":      { "$type": "fontFamily", "$value": ["JetBrains Mono", "monospace"] }
     },
     "weight": {
