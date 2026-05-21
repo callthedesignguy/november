@@ -1,6 +1,6 @@
 {
   "name": "@callthedesignguy/november-tokens",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "November design system — shared tokens for Plumb, Hippo, and Talki-OSS",
   "type": "module",
   "main": "dist/js/tokens.js",
